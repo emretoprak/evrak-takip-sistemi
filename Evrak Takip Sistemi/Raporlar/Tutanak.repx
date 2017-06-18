@@ -1,0 +1,388 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.XtraReports.v14.1.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>en-US</Localization>
+///   <Version>14.1</Version>
+///   <References>
+///     <Reference Path="C:\Users\Bozdoğan\AppData\Local\Microsoft\VisualStudio\11.0\ProjectAssemblies\pwwoz1-301\Bozdoğan Jandarma Evrak Takip Sistemi.exe" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraEditors.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.XtraEditors.v14.1.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Utils.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.Utils.v14.1.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.SqlXml\v4.0_4.0.0.0__b77a5c561934e089\System.Data.SqlXml.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Security\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Security.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization.Formatters.Soap\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Serialization.Formatters.Soap.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Build.Framework\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.Build.Framework.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.DirectoryServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.ApplicationServices\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.ApplicationServices.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Design.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.Design.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data.OracleClient\v4.0_4.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.RegularExpressions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Build.Utilities.v4.0\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.Build.Utilities.v4.0.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.DirectoryServices.Protocols\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.Protocols.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Build.Tasks.v4.0\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.Build.Tasks.v4.0.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceProcess\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration.Install\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.Install.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Internals\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Internals.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\SMDiagnostics\v4.0_4.0.0.0__b77a5c561934e089\SMDiagnostics.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationClient\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationClient.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationProvider\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationTypes\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Input.Manipulations\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Input.Manipulations.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Printing\v4.0_4.0.0.0__31bf3856ad364e35\System.Printing.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationUI\v4.0_4.0.0.0__31bf3856ad364e35\PresentationUI.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\ReachFramework\v4.0_4.0.0.0__31bf3856ad364e35\ReachFramework.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Data.Linq.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraBars.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.XtraBars.v14.1.dll" />
+///     <Reference Path="C:\Users\Bozdoğan\AppData\Local\Microsoft\VisualStudio\11.0\ProjectAssemblies\vrbsbvbv01\EntityFramework.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Dynamic\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Dynamic.dll" />
+///     <Reference Path="C:\Users\Bozdoğan\AppData\Local\Microsoft\VisualStudio\11.0\ProjectAssemblies\7mqul_bd01\log4net.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraGrid.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.XtraGrid.v14.1.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraLayout.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.XtraLayout.v14.1.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraPrinting.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.XtraPrinting.v14.1.dll" />
+///     <Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraTreeList.v14.1\v4.0_14.1.4.0__b88d1754d700e49a\DevExpress.XtraTreeList.v14.1.dll" />
+///     <Reference Path="C:\Users\Bozdoğan\AppData\Local\Microsoft\VisualStudio\11.0\ProjectAssemblies\jwus2u8y01\Newtonsoft.Json.dll" />
+///   </References>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.RptTutanak">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFCevX90AAAAAPsAAAA6bABiAGwAQQByAGEAcwB0AGkAcgBtAGEAVAB1AHQAYQBuAGEAZwBpAFQAZQB4AHQALgBUAGUAeAB0AAAAAAAB/QUgICAgICAgICAgQm96ZG/En2FuIEN1bWh1cml5ZXQgQmHFn3NhdmPEsWzEscSfxLFuxLFuIFtEYWltaUFyYW1hS2FyYXJpVGFyaWhpIWRkLk1NLnl5eXldIHRhcmlobGksIFtPbGF5U29ydXN0dXJtYU5vXSBTb3J1
+/// xZ90dXJtYSBOdW1hcmFsxLEgRGFpbWkgQXJhbWEgS2FyYXLEsSBnZXJlxJ9pbmNlLCBrb211dGFubMSxxJ/EsW3EsXogc29ydW1sdWx1ayBhbGFuxLEgacOnZXJpc2luZGUgb2xhbiBbT2xheVllcmxlcmkuT2xheVllcmldJ25kZSBtZXlkYW5hIGdlbGVuIFtTdWNsYXIuU3VjXSBvbGF5xLEgaWxlIGlsZ2lsaSBvbGFyYWsgW1Blcml5b3RsYXIuUGVyaXlvdF0gW1Blcml5b3RZaWxpXSAgYXlsYXLEsW5kYSB5YXDEsWxhbiBhcmHFn3TEsXJtYSBuZXRpY2VzaW5kZSBvbGF5xLFuIMWfw7xwaGVsaSB5YSBkYSDFn8O8cGhlbGlsZXJpIHRlc3BpdCBlZGlsZW1lZGnEn2ksIMWfw7xwaGVsaSB5YSBkYSDFn8O8cGhlbGlsZXJpIG9ydGF5YSDDp8Sxa2FyYWJpbGVjZWsg
+/// aGVyaGFuZ2kgYmlyIGVtYXJleWUgcmFzdGxhbsSxbG1hZMSxxJ/EsSwgb2xhecSxIGF5ZMSxbmxhdGFjYWsgYmlyIGRlbGlsIGVsZGUgZWRpbGRpxJ9pZGUgQ3VtaHVyaXlldCBCYcWfc2F2Y8SxbMSxxJ/EsW5hIGJpbGdpIHZlcmlsZWNlxJ9pbmUgZGFpcjsNCg0KICAgICAgICAgIEJ1IHR1dGFuYWsgdGFyYWbEsW3EsXpkYW4gdGFuemltIGVkaWxlcmVrIGJpcmxpa3RlIGltemEgYWx0xLFuYSBhbMSxbm3EscWfdMSxci4gW1BhcmFtZXRlcnMuVGFyaWghZGQuTU0ueXl5eV0=</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class RptTutanak : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRPanel xrPersonel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel13;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
+        private DevExpress.XtraReports.UI.XRPanel xrPersonel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
+        private DevExpress.XtraReports.UI.XRPanel xrPersonel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
+        private DevExpress.XtraReports.UI.XRPanel xrPersonel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel lblArastirmaTutanagiText;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRPageBreak xrPageBreak1;
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private DevExpress.XtraReports.Parameters.Parameter Tarih;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public RptTutanak() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.RptTutanak");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.xrPersonel4 = new DevExpress.XtraReports.UI.XRPanel();
+            this.xrPersonel3 = new DevExpress.XtraReports.UI.XRPanel();
+            this.xrPersonel2 = new DevExpress.XtraReports.UI.XRPanel();
+            this.xrPersonel1 = new DevExpress.XtraReports.UI.XRPanel();
+            this.lblArastirmaTutanagiText = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrPageBreak1 = new DevExpress.XtraReports.UI.XRPageBreak();
+            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.Tarih = new DevExpress.XtraReports.Parameters.Parameter();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrPersonel4,
+                        this.xrPersonel3,
+                        this.xrPersonel2,
+                        this.xrPersonel1,
+                        this.lblArastirmaTutanagiText,
+                        this.xrLabel1,
+                        this.xrPageBreak1});
+            this.Detail.Font = new System.Drawing.Font("Arial", 11F);
+            this.Detail.HeightF = 527.9581F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.SnapLinePadding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 5, 5, 100F);
+            this.Detail.StylePriority.UseFont = false;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.HeightF = 30F;
+            this.TopMargin.Name = "TopMargin";
+            this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.HeightF = 32F;
+            this.BottomMargin.Name = "BottomMargin";
+            this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrPersonel4
+            // 
+            this.xrPersonel4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel12,
+                        this.xrLabel13,
+                        this.xrLabel14});
+            this.xrPersonel4.LocationFloat = new DevExpress.Utils.PointFloat(583.9999F, 330F);
+            this.xrPersonel4.Name = "xrPersonel4";
+            this.xrPersonel4.SizeF = new System.Drawing.SizeF(184F, 102F);
+            // 
+            // xrPersonel3
+            // 
+            this.xrPersonel3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel9,
+                        this.xrLabel10,
+                        this.xrLabel11});
+            this.xrPersonel3.LocationFloat = new DevExpress.Utils.PointFloat(389.9999F, 330F);
+            this.xrPersonel3.Name = "xrPersonel3";
+            this.xrPersonel3.SizeF = new System.Drawing.SizeF(184F, 102F);
+            // 
+            // xrPersonel2
+            // 
+            this.xrPersonel2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel6,
+                        this.xrLabel7,
+                        this.xrLabel8});
+            this.xrPersonel2.LocationFloat = new DevExpress.Utils.PointFloat(194F, 330F);
+            this.xrPersonel2.Name = "xrPersonel2";
+            this.xrPersonel2.SizeF = new System.Drawing.SizeF(184F, 102F);
+            // 
+            // xrPersonel1
+            // 
+            this.xrPersonel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel4,
+                        this.xrLabel3,
+                        this.xrLabel5});
+            this.xrPersonel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 330F);
+            this.xrPersonel1.Name = "xrPersonel1";
+            this.xrPersonel1.SizeF = new System.Drawing.SizeF(184F, 102F);
+            // 
+            // lblArastirmaTutanagiText
+            // 
+            this.lblArastirmaTutanagiText.LocationFloat = new DevExpress.Utils.PointFloat(1.999998F, 66.83334F);
+            this.lblArastirmaTutanagiText.Multiline = true;
+            this.lblArastirmaTutanagiText.Name = "lblArastirmaTutanagiText";
+            this.lblArastirmaTutanagiText.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblArastirmaTutanagiText.SizeF = new System.Drawing.SizeF(764F, 199.0417F);
+            this.lblArastirmaTutanagiText.StylePriority.UseTextAlignment = false;
+            this.lblArastirmaTutanagiText.Text = resources.GetString("lblArastirmaTutanagiText.Text");
+            this.lblArastirmaTutanagiText.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopJustify;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(267.125F, 21.12499F);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(236.4583F, 23F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "ARAŞTIRMA TUTANAĞI";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrPageBreak1
+            // 
+            this.xrPageBreak1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 525.9581F);
+            this.xrPageBreak1.Name = "xrPageBreak1";
+            // 
+            // xrLabel12
+            // 
+            this.xrLabel12.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel3.AdiSoyadi")});
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(4F, 10.00003F);
+            this.xrLabel12.Name = "xrLabel12";
+            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel12.SizeF = new System.Drawing.SizeF(180F, 23F);
+            this.xrLabel12.Text = "xrLabel12";
+            // 
+            // xrLabel13
+            // 
+            this.xrLabel13.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel3.Rutbesi")});
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(4F, 26.99997F);
+            this.xrLabel13.Name = "xrLabel13";
+            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel13.SizeF = new System.Drawing.SizeF(180F, 23F);
+            this.xrLabel13.Text = "xrLabel13";
+            // 
+            // xrLabel14
+            // 
+            this.xrLabel14.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel3.Tim")});
+            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(4F, 42.99997F);
+            this.xrLabel14.Name = "xrLabel14";
+            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel14.SizeF = new System.Drawing.SizeF(180F, 23.00003F);
+            this.xrLabel14.Text = "xrLabel14";
+            // 
+            // xrLabel9
+            // 
+            this.xrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel2.AdiSoyadi")});
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(3.999969F, 10F);
+            this.xrLabel9.Name = "xrLabel9";
+            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(180.0001F, 23F);
+            this.xrLabel9.Text = "xrLabel9";
+            // 
+            // xrLabel10
+            // 
+            this.xrLabel10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel2.Rutbesi")});
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(3.999969F, 26.99994F);
+            this.xrLabel10.Name = "xrLabel10";
+            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel10.SizeF = new System.Drawing.SizeF(180.0001F, 23F);
+            this.xrLabel10.Text = "xrLabel10";
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel2.Tim")});
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(3.999908F, 42.99997F);
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(180.0001F, 23.00003F);
+            this.xrLabel11.Text = "xrLabel11";
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel1.AdiSoyadi")});
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(4.000015F, 10F);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(180F, 23F);
+            this.xrLabel6.Text = "xrLabel6";
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel1.Rutbesi")});
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(4.000015F, 26.99994F);
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(180F, 23F);
+            this.xrLabel7.Text = "xrLabel7";
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel1.Tim")});
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(4.000015F, 42.99997F);
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(180F, 23.00003F);
+            this.xrLabel8.Text = "xrLabel8";
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel.Rutbesi")});
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(5.000003F, 26.99997F);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(179F, 23F);
+            this.xrLabel4.Text = "xrLabel4";
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel.AdiSoyadi")});
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(5.000003F, 10F);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(179F, 23F);
+            this.xrLabel3.Text = "xrLabel3";
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Personel.Tim")});
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(5.000003F, 42.99991F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(179F, 23F);
+            this.xrLabel5.Text = "xrLabel5";
+            // 
+            // Tarih
+            // 
+            this.Tarih.Description = "Araştırma Tarihi";
+            this.Tarih.Name = "Tarih";
+            this.Tarih.Type = typeof(System.DateTime);
+            this.Tarih.ValueInfo = "06/20/2014 11:25:14";
+            // 
+            // RptTutanak
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.TopMargin,
+                        this.BottomMargin});
+            this.Landscape = true;
+            this.Margins = new System.Drawing.Printing.Margins(30, 29, 30, 32);
+            this.Name = "RptTutanak";
+            this.PageHeight = 583;
+            this.PageWidth = 827;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A5;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+                        this.Tarih});
+            this.Version = "14.1";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

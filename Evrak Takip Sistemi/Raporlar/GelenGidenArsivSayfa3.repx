@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="14.1.4.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="GelenGidenArsivSayfa3" DataSource="#Ref-0" Font="Arial, 9pt" Version="14.1" PageHeight="827" Landscape="true" PageWidth="1169" PaperKind="A4" Margins="30, 30, 30, 32">
+  <Bands>
+    <Item1 Ref="2" ControlType="DetailBand" Name="Detail" TextAlignment="TopLeft" Font="Arial, 9pt" Padding="0,0,0,0,100" HeightF="301.0417">
+      <Controls>
+        <Item1 Ref="3" Name="xrTable4" ControlType="XRTable" LocationFloat="0.0001589457, 251.0417" Borders="All" SizeF="1109,50">
+          <Rows>
+            <Item1 Ref="4" ControlType="XRTableRow" Name="xrTableRow10" Weight="1">
+              <Cells>
+                <Item1 Ref="5" Name="xrTableCell51" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="DEVİR TESLİM KISMI" Multiline="true" Weight="3.5">
+                  <StylePriority Ref="6" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+            <Item2 Ref="7" ControlType="XRTableRow" Name="xrTableRow9" Weight="1">
+              <Cells>
+                <Item1 Ref="8" Name="xrTableCell39" ControlType="XRTableCell" Borders="All" Weight="0.5">
+                  <StylePriority Ref="9" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="10" Name="xrTableCell26" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Sınıf ve Rütbesi&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="11" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="12" Name="xrTableCell38" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Adı&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="13" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="14" Name="xrTableCell27" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Soyadı" Weight="0.5">
+                  <StylePriority Ref="15" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="16" Name="xrTableCell37" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Sicili" Weight="0.5">
+                  <StylePriority Ref="17" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="18" Name="xrTableCell40" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Görevi" Weight="0.5">
+                  <StylePriority Ref="19" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="20" Name="xrTableCell36" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="İmza" Weight="0.5">
+                  <StylePriority Ref="21" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item7>
+              </Cells>
+            </Item2>
+          </Rows>
+          <StylePriority Ref="22" UseBorders="false" />
+        </Item1>
+        <Item2 Ref="23" Name="xrLabel6" ControlType="XRLabel" SizeF="520.0834,18.83333" LocationFloat="0, 191.7916" Font="Arial, 7pt" Padding="2,2,0,0,100" Borders="All" Multiline="true" Text="Yalnızca *4* (Dört) adet arşivlik malzeme imha edilmiştir.">
+          <StylePriority Ref="24" UseFont="false" UseBorders="false" />
+        </Item2>
+        <Item3 Ref="25" Name="xrLabel5" ControlType="XRLabel" SizeF="520.0834,18.83333" LocationFloat="0, 172.9583" Font="Arial, 7pt" Padding="2,2,0,0,100" Borders="Left, Top, Right" Multiline="true" Text="Yalnızca *4* (Dört) adet arşivlik malzeme listesidir.Yalnızca *4* (Dört) adet arşiv malzemesinin devir-teslimi yapılmıştır.">
+          <StylePriority Ref="26" UseFont="false" UseBorders="false" />
+        </Item3>
+        <Item4 Ref="27" Name="xrLabel4" ControlType="XRLabel" SizeF="520.0836,18.83333" LocationFloat="0, 154.125" Font="Arial, 7pt" Padding="2,2,0,0,100" Borders="Left, Top, Right" Multiline="true" Text="Yalnızca *4* (Dört) adet arşivlik malzeme listesidir.							&#xD;&#xA;">
+          <StylePriority Ref="28" UseFont="false" UseBorders="false" />
+        </Item4>
+        <Item5 Ref="29" Name="xrTable3" ControlType="XRTable" LocationFloat="0, 0" Borders="All" SizeF="1109,21.875">
+          <Rows>
+            <Item1 Ref="30" ControlType="XRTableRow" Name="xrTableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="31" Name="xrTableCell28" ControlType="XRTableCell" TextAlignment="TopCenter" Font="Arial, 9pt, style=Bold" Borders="Left, Top, Right" Text="ARŞİVLİK VEYA ARŞİV MALZEMESİ ENVANTERİ" Weight="3">
+                  <StylePriority Ref="32" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="33" UseBorders="false" />
+        </Item5>
+        <Item6 Ref="34" Name="xrTable1" ControlType="XRTable" LocationFloat="60.41679, 21.875" Borders="All" SizeF="1048.583,86.25004">
+          <Rows>
+            <Item1 Ref="35" ControlType="XRTableRow" Name="xrTableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="36" Name="xrTableCell6" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Dosya Numarası" Weight="0.289895085903456">
+                  <StylePriority Ref="37" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="38" Name="xrTableCell1" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Çıkaran Makam" Weight="0.7682191744183231">
+                  <StylePriority Ref="39" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="40" Name="xrTableCell5" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Tarihi/TSG" Weight="0.28989492219550372">
+                  <StylePriority Ref="41" UseFont="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="42" Name="xrTableCell9" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Dosya (Desimal) Numarası	" Multiline="true" Weight="1.233132012812119">
+                  <StylePriority Ref="43" UseFont="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="44" Name="xrTableCell2" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Konusu" Multiline="true" Weight="1.0409086564050352">
+                  <StylePriority Ref="45" UseFont="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="46" Name="xrTableCell8" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Gizlilik Derecesi" Weight="0.31671680034742744">
+                  <StylePriority Ref="47" UseFont="false" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="48" Name="xrTableCell4" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Sayfa (İkincil Evrakta Birlikte Adedi)&#xD;&#xA;&#xD;&#xA;" Multiline="true" Weight="0.33012795224372737">
+                  <StylePriority Ref="49" UseFont="false" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="50" Name="xrTableCell7" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="İmha Yılı" Multiline="true" Weight="0.23110539567440802">
+                  <StylePriority Ref="51" UseFont="false" UseTextAlignment="false" />
+                </Item8>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="52" UseBorders="false" />
+        </Item6>
+        <Item7 Ref="53" Name="xrLabel1" ControlType="XRLabel" SizeF="30.20833,66.25004" LocationFloat="0.0001272795, 46.875" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="All" BorderWidth="1" BorderDashStyle="Solid" Multiline="true" Angle="90" Text="İlk Evrak">
+          <StylePriority Ref="54" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="55" Name="xrLabel2" ControlType="XRLabel" SizeF="30.20833,66.25004" LocationFloat="30.20846, 46.875" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="Top, Bottom" BorderWidth="1" BorderDashStyle="Solid" Angle="90" Text="İlgili Evrak">
+          <StylePriority Ref="56" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="57" Name="xrLabel3" ControlType="XRLabel" SizeF="60.41667,25" LocationFloat="0.0001271566, 21.875" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="Left, Top" BorderWidth="1" BorderDashStyle="Solid" Text="S.Nu.">
+          <StylePriority Ref="58" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="59" Name="xrTable2" ControlType="XRTable" LocationFloat="0.0001589457, 108.1251" Borders="Left, Right, Bottom" SizeF="1109,21.9999">
+          <Rows>
+            <Item1 Ref="60" ControlType="XRTableRow" Name="xrTableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="61" Name="xrTableCell15" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.081717784785172193">
+                  <StylePriority Ref="62" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="63" Name="xrTableCell14" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.0844228110385408">
+                  <StylePriority Ref="64" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="65" Name="xrTableCell16" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.18002959767371413">
+                  <StylePriority Ref="66" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="67" Name="xrTableCell3" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.48424514720921807">
+                  <StylePriority Ref="68" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="69" Name="xrTableCell17" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.1827344072219842">
+                  <StylePriority Ref="70" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="71" Name="xrTableCell13" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.14262117901442689">
+                  <StylePriority Ref="72" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="73" Name="xrTableCell18" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.1623084037989519">
+                  <StylePriority Ref="74" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="75" Name="xrTableCell25" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Times New Roman, 9.75pt, style=Bold" Text="-" Weight="0.02705140063315864">
+                  <StylePriority Ref="76" UseFont="false" UseTextAlignment="false" />
+                </Item8>
+                <Item9 Ref="77" Name="xrTableCell10" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.15148784354568851">
+                  <StylePriority Ref="78" UseTextAlignment="false" />
+                </Item9>
+                <Item10 Ref="79" Name="xrTableCell24" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Times New Roman, 9.75pt, style=Bold" Text="-" Weight="0.027051400633158647">
+                  <StylePriority Ref="80" UseFont="false" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="81" Name="xrTableCell19" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.070333641646212489">
+                  <StylePriority Ref="82" UseTextAlignment="false" />
+                </Item11>
+                <Item12 Ref="83" Name="xrTableCell23" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Times New Roman, 9.75pt, style=Bold" Text="/" Weight="0.027051400633158647">
+                  <StylePriority Ref="84" UseFont="false" UseTextAlignment="false" />
+                </Item12>
+                <Item13 Ref="85" Name="xrTableCell12" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.16939618777344048">
+                  <StylePriority Ref="86" UseTextAlignment="false" />
+                </Item13>
+                <Item14 Ref="87" Name="xrTableCell22" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.65613462001400791">
+                  <StylePriority Ref="88" UseTextAlignment="false" />
+                </Item14>
+                <Item15 Ref="89" Name="xrTableCell20" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.19964161517203166">
+                  <StylePriority Ref="90" UseTextAlignment="false" />
+                </Item15>
+                <Item16 Ref="91" Name="xrTableCell21" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.20809501276124728">
+                  <StylePriority Ref="92" UseTextAlignment="false" />
+                </Item16>
+                <Item17 Ref="93" Name="xrTableCell11" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.14567754644588779">
+                  <StylePriority Ref="94" UseTextAlignment="false" />
+                </Item17>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="95" UseBorders="false" />
+        </Item10>
+      </Controls>
+      <StylePriority Ref="96" UseFont="false" />
+    </Item1>
+    <Item2 Ref="97" ControlType="TopMarginBand" Name="TopMargin" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="30" />
+    <Item3 Ref="98" ControlType="BottomMarginBand" Name="BottomMargin" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="31.99994" />
+    <Item4 Ref="99" ControlType="DetailReportBand" Name="DetailReport" DataMember="DevirTeslimPersonelleri" DataSource="#Ref-0" Level="0">
+      <Bands>
+        <Item1 Ref="100" ControlType="DetailBand" Name="Detail1" HeightF="20">
+          <Controls>
+            <Item1 Ref="101" Name="xrTable5" ControlType="XRTable" LocationFloat="0, 0" Borders="Left, Right, Bottom" SizeF="1109,20">
+              <Rows>
+                <Item1 Ref="102" ControlType="XRTableRow" Name="xrTableRow4" Weight="11.5">
+                  <Cells>
+                    <Item1 Ref="103" Name="xrTableCell35" ControlType="XRTableCell" Weight="0.16839758511562364">
+                      <DataBindings>
+                        <Item1 Ref="104" PropertyName="Text" DataMember="DevirTeslimPersonelleri.Pozisyon" />
+                      </DataBindings>
+                    </Item1>
+                    <Item2 Ref="105" Name="xrTableCell29" ControlType="XRTableCell" Text="xrTableCell29" Weight="0.16839742292640136">
+                      <DataBindings>
+                        <Item1 Ref="106" PropertyName="Text" DataMember="DevirTeslimPersonelleri.Rutbesi" />
+                      </DataBindings>
+                    </Item2>
+                    <Item3 Ref="107" Name="xrTableCell30" ControlType="XRTableCell" Text="xrTableCell30" Weight="0.16839747428632174">
+                      <DataBindings>
+                        <Item1 Ref="108" PropertyName="Text" DataMember="DevirTeslimPersonelleri.Adi" />
+                      </DataBindings>
+                    </Item3>
+                    <Item4 Ref="109" Name="xrTableCell31" ControlType="XRTableCell" Text="xrTableCell31" Weight="0.1683974013011717">
+                      <DataBindings>
+                        <Item1 Ref="110" PropertyName="Text" DataMember="DevirTeslimPersonelleri.Soyadi" />
+                      </DataBindings>
+                    </Item4>
+                    <Item5 Ref="111" Name="xrTableCell32" ControlType="XRTableCell" Text="xrTableCell32" Weight="0.16839749861470507">
+                      <DataBindings>
+                        <Item1 Ref="112" PropertyName="Text" DataMember="DevirTeslimPersonelleri.Sicili" />
+                      </DataBindings>
+                    </Item5>
+                    <Item6 Ref="113" Name="xrTableCell33" ControlType="XRTableCell" Text="xrTableCell33" Weight="0.16839737697278839">
+                      <DataBindings>
+                        <Item1 Ref="114" PropertyName="Text" DataMember="DevirTeslimPersonelleri.Gorevi" />
+                      </DataBindings>
+                    </Item6>
+                    <Item7 Ref="115" Name="xrTableCell34" ControlType="XRTableCell" Weight="0.16839716612679942" />
+                  </Cells>
+                </Item1>
+              </Rows>
+              <StylePriority Ref="116" UseBorders="false" />
+            </Item1>
+          </Controls>
+        </Item1>
+      </Bands>
+    </Item4>
+  </Bands>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v14.1" Ref="0" Content="~Xtra#NULL" Type="System.Windows.Forms.BindingSource" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

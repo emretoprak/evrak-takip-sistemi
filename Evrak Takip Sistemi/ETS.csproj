@@ -1,0 +1,1411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42FB46D7-34EF-401A-B8B8-2EBCB43992C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETS</RootNamespace>
+    <AssemblyName>Evrak Takip Sistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Bozdogan\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <SupportUrl>http://www.emretoprak.com</SupportUrl>
+    <ErrorReportUrl>http://www.emretoprak.com</ErrorReportUrl>
+    <TargetCulture>tr-TR</TargetCulture>
+    <ProductName>Jandarma Evrak Takip Sistemi</ProductName>
+    <PublisherName>Emre TOPRAK</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ETS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ETS.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5E4544175CC9CE402E12E46B5D2C1B160495144B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Application_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.ExpressApp.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.Utils.v14.1.UI, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.Wizard, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v14.1.Drawing, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1.Extensions, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.1\lib\net40\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcilisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcilisEkrani.Designer.cs">
+      <DependentUpon>AcilisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\GelenGidenArsivSayfa3DTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\GelenGidenArsivSayfa2DTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\GelenGidenArsivSayfa1DTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\ArsivGelenGidenDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\AyicindeGelenDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\AylarDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\BirSonrakiAyaDevirDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\GecenAyDevirDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\GenelToplamDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\InfazMevcutenDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\InfazMuameletenDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\IstatistikDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\MahalleEvraklariDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\MahalleOlaylariDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\RaporPersonelDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\ToplamDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\Ortak\YillarDTO.cs" />
+    <Compile Include="Akislar\Islemler\YedekIslemleri.cs" />
+    <Compile Include="Akislar\Istatistikler\IcmalRapor.cs" />
+    <Compile Include="Akislar\Istatistikler\GelenGidenIstatistik.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\IcmalTumYillarRaporDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\IcmalYillikRaporDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\IcmalAylikRaporDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\RaporNesneleriDTO\GelenGidenIstatistikDTO.cs" />
+    <Compile Include="Akislar\Istatistikler\OlayBilgileriYillikDokum.cs" />
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Akislar\Alarmlar\Alarm.cs" />
+    <Compile Include="Akislar\Enums\EvrakTip.cs" />
+    <Compile Include="Akislar\DomainDataObjects\GridGorunumDTO\GidenEvrakViewDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\GridGorunumDTO\GelenEvrakViewDTO.cs" />
+    <Compile Include="Akislar\DomainDataObjects\KayitDuzenleDTO.cs" />
+    <Compile Include="ArsivGelenGidenEvraklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArsivGelenGidenEvraklar.Designer.cs">
+      <DependentUpon>ArsivGelenGidenEvraklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlayBilgileriOlayDagilimiAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlayBilgileriOlayDagilimiAyarlari.Designer.cs">
+      <DependentUpon>OlayBilgileriOlayDagilimiAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlayBilgileriYillikDokumAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlayBilgileriYillikDokumAyarlari.Designer.cs">
+      <DependentUpon>OlayBilgileriYillikDokumAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TansifAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TansifAyarlari.Designer.cs">
+      <DependentUpon>TansifAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlayBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlayBilgileri.Designer.cs">
+      <DependentUpon>OlayBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelenGidenArsivRaporAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelenGidenArsivRaporAyarlari.Designer.cs">
+      <DependentUpon>GelenGidenArsivRaporAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\ArsivGelenGiden.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Ayarlar.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Baslik.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Birimler.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\DaimiArastirmaTutanaklari.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\DBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\DBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\DBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\EvrakiCikaranMakam.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\EvrakKategori.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\GelenEvrak.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\GidenEvrak.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\GizlilikDerecesi.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\GonderdigiMakam.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\GuvenlikNoOncelikDerecesi.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\KanunMaddeleri.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\KimlikBilgileri.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Komutanliklar.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\MuzekkereCinsleri.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\MuzekkereIcmalDefteri.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\OlayDurumu.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\OlaylarBilgisi.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\OlayYerleri.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Periyotlar.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Personel.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Subeler.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Suclar.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\Tasnifler.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\TempOlaylar.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKatmani\ZimmetDefteri.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YeniGelenGidenArsivle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniGelenGidenArsivle.Designer.cs">
+      <DependentUpon>YeniGelenGidenArsivle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkinda.Designer.cs">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniOlayBilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniOlayBilgisi.Designer.cs">
+      <DependentUpon>YeniOlayBilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniGelenGidenArsiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniGelenGidenArsiv.Designer.cs">
+      <DependentUpon>YeniGelenGidenArsiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuzekkereIcmaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuzekkereIcmaller.Designer.cs">
+      <DependentUpon>MuzekkereIcmaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuzekkereIcmalAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuzekkereIcmalAyarlari.Designer.cs">
+      <DependentUpon>MuzekkereIcmalAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniMuzekkereIcmal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniMuzekkereIcmal.Designer.cs">
+      <DependentUpon>YeniMuzekkereIcmal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RaporSecimEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporSecimEkrani.Designer.cs">
+      <DependentUpon>RaporSecimEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporTasarlayicisi\RaporDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporTasarlayicisi\RaporDuzenle.Designer.cs">
+      <DependentUpon>RaporDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="YedekYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YedekYonetimi.Designer.cs">
+      <DependentUpon>YedekYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OzelKontrol\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OzelKontrol\GradientPanel.Designer.cs">
+      <DependentUpon>GradientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OzelKontrol\NewLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EvrakZimmetle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvrakZimmetle.Designer.cs">
+      <DependentUpon>EvrakZimmetle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HataYakalama\ExceptionHandling.cs" />
+    <Compile Include="EvrakZimmet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvrakZimmet.Designer.cs">
+      <DependentUpon>EvrakZimmet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelenEvraklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelenEvraklar.Designer.cs">
+      <DependentUpon>GelenEvraklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenelAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenelAyarlar.Designer.cs">
+      <DependentUpon>GenelAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GidenEvraklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GidenEvraklar.Designer.cs">
+      <DependentUpon>GidenEvraklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelYonetimi.Designer.cs">
+      <DependentUpon>PersonelYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlayListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlayListesi.Designer.cs">
+      <DependentUpon>OlayListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlayListesiTopluDuzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlayListesiTopluDuzenleme.Designer.cs">
+      <DependentUpon>OlayListesiTopluDuzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniGidenEvrak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniGidenEvrak.Designer.cs">
+      <DependentUpon>YeniGidenEvrak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniGelenEvrak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniGelenEvrak.Designer.cs">
+      <DependentUpon>YeniGelenEvrak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UstYaziDegisikleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UstYaziDegisikleri.Designer.cs">
+      <DependentUpon>UstYaziDegisikleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniOlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniOlay.Designer.cs">
+      <DependentUpon>YeniOlay.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcilisEkrani.resx">
+      <DependentUpon>AcilisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArsivGelenGidenEvraklar.resx">
+      <DependentUpon>ArsivGelenGidenEvraklar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlayBilgileriOlayDagilimiAyarlari.resx">
+      <DependentUpon>OlayBilgileriOlayDagilimiAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlayBilgileriYillikDokumAyarlari.resx">
+      <DependentUpon>OlayBilgileriYillikDokumAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TansifAyarlari.resx">
+      <DependentUpon>TansifAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlayBilgileri.resx">
+      <DependentUpon>OlayBilgileri.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelenGidenArsivRaporAyarlari.resx">
+      <DependentUpon>GelenGidenArsivRaporAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniGelenGidenArsivle.resx">
+      <DependentUpon>YeniGelenGidenArsivle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkinda.resx">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniOlayBilgisi.resx">
+      <DependentUpon>YeniOlayBilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniGelenGidenArsiv.resx">
+      <DependentUpon>YeniGelenGidenArsiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuzekkereIcmaller.resx">
+      <DependentUpon>MuzekkereIcmaller.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuzekkereIcmalAyarlari.resx">
+      <DependentUpon>MuzekkereIcmalAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniMuzekkereIcmal.resx">
+      <DependentUpon>YeniMuzekkereIcmal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporSecimEkrani.resx">
+      <DependentUpon>RaporSecimEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporTasarlayicisi\RaporDuzenle.resx">
+      <DependentUpon>RaporDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YedekYonetimi.resx">
+      <DependentUpon>YedekYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvrakZimmetle.resx">
+      <DependentUpon>EvrakZimmetle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvrakZimmet.resx">
+      <DependentUpon>EvrakZimmet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelenEvraklar.resx">
+      <DependentUpon>GelenEvraklar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenelAyarlar.resx">
+      <DependentUpon>GenelAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GidenEvraklar.resx">
+      <DependentUpon>GidenEvraklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelYonetimi.resx">
+      <DependentUpon>PersonelYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="OlayListesi.resx">
+      <DependentUpon>OlayListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlayListesiTopluDuzenleme.resx">
+      <DependentUpon>OlayListesiTopluDuzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniGidenEvrak.resx">
+      <DependentUpon>YeniGidenEvrak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniGelenEvrak.resx">
+      <DependentUpon>YeniGelenEvrak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UstYaziDegisikleri.resx">
+      <DependentUpon>UstYaziDegisikleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniOlay.resx">
+      <DependentUpon>YeniOlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Application_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\BETS.Akislar.RaporNesneleri.IcmalRapor.datasource" />
+    <None Include="Properties\DataSources\BETS.Akislar.RaporNesneleri.IcmalTumYillarRapor.datasource" />
+    <None Include="Properties\DataSources\ETS.Akislar.DomainDataObjects.RaporNesneleriDTO.GelenGidenArsivDTO.datasource" />
+    <None Include="Properties\DataSources\ETS.Akislar.DomainDataObjects.RaporNesneleriDTO.GelenGidenArsivSayfa2DTO.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Raporlar\AylikIcmalHepsi.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\AylikIcmalKemer.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\AylikIcmalMerkez.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\GelenGidenArsivSayfa1.repx" />
+    <None Include="Raporlar\GelenGidenArsivSayfa2.repx" />
+    <None Include="Raporlar\GelenGidenArsivSayfa3.repx" />
+    <None Include="Raporlar\GelenGidenIstatistik.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\Tutanak.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\Tutanak2Imza.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\Tutanak3Imza.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\UstYazi.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\YillikIcmal.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Raporlar\YillikIcmaller.repx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EntityDeploy Include="VeriKatmani\DBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="VeriKatmani\DBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="VeriKatmani\DBModel.edmx.diagram">
+      <DependentUpon>DBModel.edmx</DependentUpon>
+    </None>
+    <None Include="VeriKatmani\DBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoYenile.png" />
+    <None Include="Resources\icoZamaniGelen.png" />
+    <None Include="Resources\icoCikis.png" />
+    <Content Include="ETS.sdf" />
+    <Content Include="ETS.ico" />
+    <None Include="Resources\icoMuzekkereIcmalDefteri.png" />
+    <None Include="Resources\configPr.png" />
+    <None Include="Resources\Amazing-Turkey-Flag-Image.jpg" />
+    <None Include="Resources\icoYeniOlay.png" />
+    <None Include="Resources\icoOlaylar.png" />
+    <None Include="Resources\icoTansif.png" />
+    <None Include="Resources\icoYillikDokum.png" />
+    <None Include="Resources\icoOlayDagilimi.png" />
+    <None Include="Resources\icoBekleyenEvraklar.png" />
+    <Content Include="tr\DevExpress.Charts.Designer.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Dashboard.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Dashboard.v14.1.Web.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Dashboard.v14.1.Win.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Data.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.DataAccess.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.DataAccess.v14.1.UI.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.PivotChart.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.Reports.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.Scheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.Scheduler.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.Security.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.Validation.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.ExpressApp.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Map.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Office.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Pdf.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.PivotGrid.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Printing.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Snap.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Snap.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Snap.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Sparkline.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Spreadsheet.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Utils.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Utils.v14.1.UI.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Web.ASPxHtmlEditor.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Web.ASPxScheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Web.ASPxSpellChecker.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Web.ASPxSpreadsheet.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Web.ASPxTreeList.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Charts.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Core.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Docking.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Gauges.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Grid.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.LayoutControl.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.NavBar.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.PdfViewer.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Printing.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.PropertyGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.ReportDesigner.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Ribbon.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.RichEdit.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.Scheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpf.SpellChecker.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.Xpo.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraBars.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraCharts.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraCharts.v14.1.Wizard.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraEditors.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraGauges.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraGauges.v14.1.Presets.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraLayout.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraNavBar.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraPdfViewer.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraPivotGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraPrinting.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraReports.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraReports.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraReports.v14.1.Web.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraRichEdit.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraRichEdit.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraScheduler.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraScheduler.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraScheduler.v14.1.Reporting.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraScheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraSpellChecker.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraSpreadsheet.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraTreeList.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraVerticalGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr\DevExpress.XtraWizard.v14.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\icoOlayBilgisiGirisi.png" />
+    <None Include="Resources\icoOlayListesi.png" />
+    <None Include="Resources\icoAktifPasif.png" />
+    <None Include="Resources\icoTopluDegistirme.png" />
+    <None Include="Resources\icoDurumY.png" />
+    <None Include="Resources\icoDurumY1.png" />
+    <None Include="Resources\icoDurumK.png" />
+    <None Include="Resources\JandarmaBanner.png" />
+    <None Include="Resources\icoDuzenle.png" />
+    <None Include="Resources\icoZimmetle.png" />
+    <None Include="Resources\icoSil.png" />
+    <None Include="Resources\icoYedek.png" />
+    <None Include="Resources\icoPersonel.png" />
+    <None Include="Resources\icoRapor.png" />
+    <None Include="Resources\icoZimmetDefteri.png" />
+    <None Include="Resources\icoGidenEvrak.png" />
+    <None Include="Resources\iconDurumTamam.png" />
+    <None Include="Resources\icoDurumBeklemede.png" />
+    <None Include="Resources\icoAyarlar.png" />
+    <None Include="Resources\icoGelenEvraklar.png" />
+    <None Include="Resources\icoYeniGelenEvrak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.Charts.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.CodeParser.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DataAccess.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DataAccess.v14.1.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.ExpressApp.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.ExpressApp.Xpo.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Map.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Pdf.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Pdf.v14.1.Drawing">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Persistent.Base.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Sparkline.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v14.1.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v14.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v14.1.Wizard">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGauges.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraMap.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPdfViewer.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v14.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v14.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraWizard.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <Target Name="AfterCompile" Condition="Exists('App.$(Configuration).config')">
+    <!--Generate transformed app config in the intermediate directory-->
+    <TransformXml Source="App.config" Destination="$(IntermediateOutputPath)$(TargetFileName).config" Transform="App.$(Configuration).config" />
+    <!--Force build process to use the transformed configuration file from now on.-->
+    <ItemGroup>
+      <AppConfigWithTargetPath Remove="App.config" />
+      <AppConfigWithTargetPath Include="$(IntermediateOutputPath)$(TargetFileName).config">
+        <TargetPath>$(TargetFileName).config</TargetPath>
+      </AppConfigWithTargetPath>
+    </ItemGroup>
+  </Target>
+  <!--Override After Publish to support ClickOnce AfterPublish. Target replaces the untransformed config file copied to the deployment directory with the transformed one.-->
+  <Target Name="AfterPublish">
+    <PropertyGroup>
+      <DeployedConfig>$(_DeploymentApplicationDir)$(TargetName)$(TargetExt).config$(_DeploymentFileMappingExtension)</DeployedConfig>
+    </PropertyGroup>
+    <!--Publish copies the untransformed App.config to deployment directory so overwrite it-->
+    <Copy Condition="Exists('$(DeployedConfig)')" SourceFiles="$(IntermediateOutputPath)$(TargetFileName).config" DestinationFiles="$(DeployedConfig)" />
+  </Target>
+</Project>

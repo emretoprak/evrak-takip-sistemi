@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="14.1.4.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="GelenGidenArsivSayfa1" DataSource="#Ref-0" Font="Arial, 9pt" Version="14.1" PageHeight="827" Landscape="true" PageWidth="1169" PaperKind="A4" Margins="30, 30, 30, 79">
+  <Bands>
+    <Item1 Ref="2" ControlType="DetailBand" Name="Detail" TextAlignment="TopLeft" Padding="0,0,0,0,100" HeightF="288.5416">
+      <Controls>
+        <Item1 Ref="3" Name="xrTable3" ControlType="XRTable" LocationFloat="0, 238.5416" Borders="All" SizeF="1109,50">
+          <Rows>
+            <Item1 Ref="4" ControlType="XRTableRow" Name="xrTableRow10" Weight="1">
+              <Cells>
+                <Item1 Ref="5" Name="xrTableCell51" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="İLK TASNİF KURULU	&#xD;&#xA;" Multiline="true" Weight="3.5">
+                  <StylePriority Ref="6" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+            <Item2 Ref="7" ControlType="XRTableRow" Name="xrTableRow9" Weight="1">
+              <Cells>
+                <Item1 Ref="8" Name="xrTableCell39" ControlType="XRTableCell" Borders="All" Weight="0.5">
+                  <StylePriority Ref="9" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="10" Name="xrTableCell20" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Sınıf ve Rütbesi&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="11" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="12" Name="xrTableCell38" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Adı&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="13" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="14" Name="xrTableCell21" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Soyadı" Weight="0.5">
+                  <StylePriority Ref="15" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="16" Name="xrTableCell37" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Sicili" Weight="0.5">
+                  <StylePriority Ref="17" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="18" Name="xrTableCell40" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="Görevi" Weight="0.5">
+                  <StylePriority Ref="19" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="20" Name="xrTableCell36" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Borders="All" Text="İmza" Weight="0.5">
+                  <StylePriority Ref="21" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item7>
+              </Cells>
+            </Item2>
+          </Rows>
+          <StylePriority Ref="22" UseBorders="false" />
+        </Item1>
+        <Item2 Ref="23" Name="xrTable2" ControlType="XRTable" LocationFloat="0, 144.7917" Borders="All" SizeF="1109,75">
+          <Rows>
+            <Item1 Ref="24" ControlType="XRTableRow" Name="xrTableRow8" Weight="1">
+              <Cells>
+                <Item1 Ref="25" Name="xrTableCell41" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Bu Kısım, Envanteri Teslim Alan Arşiv Kademesi Tarafından Doldurulur." Weight="2.94">
+                  <StylePriority Ref="26" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="27" Name="xrTableCell42" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Konu Grubu Nu.&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="28" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="29" Name="xrTableCell43" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Arşiv Kategorisi&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="30" UseFont="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="31" Name="xrTableCell44" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Envanter Numarası&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="32" UseFont="false" UseTextAlignment="false" />
+                </Item4>
+              </Cells>
+            </Item1>
+            <Item2 Ref="33" ControlType="XRTableRow" Name="xrTableRow7" Weight="1">
+              <Cells>
+                <Item1 Ref="34" Name="xrTableCell27" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Depo Nu.	&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="35" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="36" Name="xrTableCell28" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Depo Oda Nu.&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="37" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="38" Name="xrTableCell29" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Dolap Nu.&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="39" UseFont="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="40" Name="xrTableCell30" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Raf Nu.&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="41" UseFont="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="42" Name="xrTableCell31" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Sandık Nu.				&#xD;&#xA;" Multiline="true" Weight="0.5">
+                  <StylePriority Ref="43" UseFont="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="44" Name="xrTableCell32" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="Kutu/Dosya Nu.		&#xD;&#xA;" Multiline="true" Weight="0.44">
+                  <StylePriority Ref="45" UseFont="false" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="46" Name="xrTableCell33" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell33" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="47" PropertyName="Text" DataMember="KonuGrubuNu" />
+                  </DataBindings>
+                  <StylePriority Ref="48" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="49" Name="xrTableCell34" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell34" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="50" PropertyName="Text" DataMember="ArsivKategorisi" />
+                  </DataBindings>
+                  <StylePriority Ref="51" UseTextAlignment="false" />
+                </Item8>
+                <Item9 Ref="52" Name="xrTableCell35" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell35" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="53" PropertyName="Text" DataMember="EnvanterNumarasi" />
+                  </DataBindings>
+                  <StylePriority Ref="54" UseTextAlignment="false" />
+                </Item9>
+              </Cells>
+            </Item2>
+            <Item3 Ref="55" ControlType="XRTableRow" Name="xrTableRow6" Weight="1">
+              <Cells>
+                <Item1 Ref="56" Name="xrTableCell23" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell23" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="57" PropertyName="Text" DataMember="DepoNu" />
+                  </DataBindings>
+                  <StylePriority Ref="58" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="59" Name="xrTableCell26" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell26" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="60" PropertyName="Text" DataMember="DepoOdaNu" />
+                  </DataBindings>
+                  <StylePriority Ref="61" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="62" Name="xrTableCell18" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell18" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="63" PropertyName="Text" DataMember="DolapNu" />
+                  </DataBindings>
+                  <StylePriority Ref="64" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="65" Name="xrTableCell22" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell22" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="66" PropertyName="Text" DataMember="RafNu" />
+                  </DataBindings>
+                  <StylePriority Ref="67" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="68" Name="xrTableCell25" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell25" Weight="0.5">
+                  <DataBindings>
+                    <Item1 Ref="69" PropertyName="Text" DataMember="SandikNu" />
+                  </DataBindings>
+                  <StylePriority Ref="70" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="71" Name="xrTableCell19" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell19" Weight="0.44">
+                  <DataBindings>
+                    <Item1 Ref="72" PropertyName="Text" DataMember="KutuDosyaNu" />
+                  </DataBindings>
+                  <StylePriority Ref="73" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="74" Name="xrTableCell24" ControlType="XRTableCell" Weight="1.5" />
+              </Cells>
+            </Item3>
+          </Rows>
+          <StylePriority Ref="75" UseBorders="false" />
+        </Item2>
+        <Item3 Ref="76" Name="xrTable1" ControlType="XRTable" LocationFloat="0, 0" Borders="All" SizeF="1109,125">
+          <Rows>
+            <Item1 Ref="77" ControlType="XRTableRow" Name="xrTableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="78" Name="xrTableCell6" ControlType="XRTableCell" TextAlignment="MiddleCenter" Font="Arial, 9pt, style=Bold" Text="ARŞİVLİK VEYA ARŞİV MALZEMESİ ENVANTERİ" Weight="3.9921773341053313">
+                  <StylePriority Ref="79" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+            <Item2 Ref="80" ControlType="XRTableRow" Name="xrTableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="81" Name="xrTableCell5" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Komutanlık/Kurum Adı			&#xD;&#xA;" Multiline="true" Weight="1">
+                  <StylePriority Ref="82" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="83" Name="xrTableCell7" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="1">
+                  <DataBindings>
+                    <Item1 Ref="84" PropertyName="Text" DataMember="KomutanlikKurumAdi" />
+                  </DataBindings>
+                  <StylePriority Ref="85" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="86" Name="xrTableCell8" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Konuş Yeri		&#xD;&#xA;" Multiline="true" Weight="1.0578907648974141">
+                  <StylePriority Ref="87" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="88" Name="xrTableCell9" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="0.93428656920791719">
+                  <DataBindings>
+                    <Item1 Ref="89" PropertyName="Text" DataMember="KonusYeri" />
+                  </DataBindings>
+                  <StylePriority Ref="90" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item4>
+              </Cells>
+            </Item2>
+            <Item3 Ref="91" ControlType="XRTableRow" Name="xrTableRow4" Weight="1">
+              <Cells>
+                <Item1 Ref="92" Name="xrTableCell10" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Başkanlık (Eşiti) Adı			&#xD;&#xA;" Multiline="true" Weight="1">
+                  <StylePriority Ref="93" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="94" Name="xrTableCell11" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="1">
+                  <DataBindings>
+                    <Item1 Ref="95" PropertyName="Text" DataMember="BaskanlikAdi" />
+                  </DataBindings>
+                  <StylePriority Ref="96" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="97" Name="xrTableCell12" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Envanterin Düzenlendiği Tarih		&#xD;&#xA;" Multiline="true" Weight="1.0578907648974141">
+                  <StylePriority Ref="98" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="99" Name="xrTableCell13" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="0.93428656920791719">
+                  <DataBindings>
+                    <Item1 Ref="100" FormatString="{0:dd.MM.yyyy}" PropertyName="Text" DataMember="EnvanterinDuzenlendigiTarih" />
+                  </DataBindings>
+                  <StylePriority Ref="101" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item4>
+              </Cells>
+            </Item3>
+            <Item4 Ref="102" ControlType="XRTableRow" Name="xrTableRow5" Weight="1">
+              <Cells>
+                <Item1 Ref="103" Name="xrTableCell14" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Daire (Eşiti) Adı			&#xD;&#xA;" Multiline="true" Weight="1">
+                  <StylePriority Ref="104" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="105" Name="xrTableCell15" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="1">
+                  <DataBindings>
+                    <Item1 Ref="106" PropertyName="Text" DataMember="DaireAdi" />
+                  </DataBindings>
+                  <StylePriority Ref="107" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="108" Name="xrTableCell16" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Envanteri Düzenlenen Arşiv Dönemi		&#xD;&#xA;" Multiline="true" Weight="1.0578907648974141">
+                  <StylePriority Ref="109" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="110" Name="xrTableCell17" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="0.93428656920791719">
+                  <DataBindings>
+                    <Item1 Ref="111" PropertyName="Text" DataMember="EnvanteriDuzenlenenArsivDonemi" />
+                  </DataBindings>
+                  <StylePriority Ref="112" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item4>
+              </Cells>
+            </Item4>
+            <Item5 Ref="113" ControlType="XRTableRow" Name="xrTableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="114" Name="xrTableCell1" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Şube (Eşiti) Adı			&#xD;&#xA;" Multiline="true" Weight="1">
+                  <StylePriority Ref="115" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="116" Name="xrTableCell2" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="1">
+                  <DataBindings>
+                    <Item1 Ref="117" PropertyName="Text" DataMember="SubeAdi" />
+                  </DataBindings>
+                  <StylePriority Ref="118" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="119" Name="xrTableCell4" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt, style=Bold" Padding="3,3,3,3,100" Text="Envanterin Düzenlenme Amacı		&#xD;&#xA;" Multiline="true" Weight="1.0578907648974141">
+                  <StylePriority Ref="120" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="121" Name="xrTableCell3" ControlType="XRTableCell" TextAlignment="MiddleLeft" Font="Arial, 9pt" Padding="3,3,3,3,100" Weight="0.93428656920791719">
+                  <DataBindings>
+                    <Item1 Ref="122" PropertyName="Text" DataMember="EnvanterinDuzenlenmeAmaci" />
+                  </DataBindings>
+                  <StylePriority Ref="123" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+                </Item4>
+              </Cells>
+            </Item5>
+          </Rows>
+          <StylePriority Ref="124" UseBorders="false" />
+        </Item3>
+      </Controls>
+    </Item1>
+    <Item2 Ref="125" ControlType="TopMarginBand" Name="TopMargin" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="30" />
+    <Item3 Ref="126" ControlType="BottomMarginBand" Name="BottomMargin" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="78.95826" />
+    <Item4 Ref="127" ControlType="DetailReportBand" Name="DetailReport" DataMember="TasnifKuruluPersonelleri" DataSource="#Ref-0" Level="0">
+      <Bands>
+        <Item1 Ref="128" ControlType="DetailBand" Name="Detail1" HeightF="25">
+          <Controls>
+            <Item1 Ref="129" Name="xrTable4" ControlType="XRTable" LocationFloat="0, 0" Borders="Left, Right, Bottom" SizeF="1109,25">
+              <Rows>
+                <Item1 Ref="130" ControlType="XRTableRow" Name="xrTableRow11" Weight="11.5">
+                  <Cells>
+                    <Item1 Ref="131" Name="xrTableCell45" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell45" Weight="0.16839742562955506">
+                      <DataBindings>
+                        <Item1 Ref="132" PropertyName="Text" DataMember="TasnifKuruluPersonelleri.Pozisyon" />
+                      </DataBindings>
+                      <StylePriority Ref="133" UseTextAlignment="false" />
+                    </Item1>
+                    <Item2 Ref="134" Name="xrTableCell46" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell46" Weight="0.16839742562955504">
+                      <DataBindings>
+                        <Item1 Ref="135" PropertyName="Text" DataMember="TasnifKuruluPersonelleri.Rutbesi" />
+                      </DataBindings>
+                      <StylePriority Ref="136" UseTextAlignment="false" />
+                    </Item2>
+                    <Item3 Ref="137" Name="xrTableCell47" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell47" Weight="0.16839744184847727">
+                      <DataBindings>
+                        <Item1 Ref="138" PropertyName="Text" DataMember="TasnifKuruluPersonelleri.Adi" />
+                      </DataBindings>
+                      <StylePriority Ref="139" UseTextAlignment="false" />
+                    </Item3>
+                    <Item4 Ref="140" Name="xrTableCell48" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell48" Weight="0.16839747428632174">
+                      <DataBindings>
+                        <Item1 Ref="141" PropertyName="Text" DataMember="TasnifKuruluPersonelleri.Soyadi" />
+                      </DataBindings>
+                      <StylePriority Ref="142" UseTextAlignment="false" />
+                    </Item4>
+                    <Item5 Ref="143" Name="xrTableCell49" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell49" Weight="0.16839736075386619">
+                      <DataBindings>
+                        <Item1 Ref="144" PropertyName="Text" DataMember="TasnifKuruluPersonelleri.Sicili" />
+                      </DataBindings>
+                      <StylePriority Ref="145" UseTextAlignment="false" />
+                    </Item5>
+                    <Item6 Ref="146" Name="xrTableCell50" ControlType="XRTableCell" TextAlignment="MiddleCenter" Text="xrTableCell50" Weight="0.168397398598018">
+                      <DataBindings>
+                        <Item1 Ref="147" PropertyName="Text" DataMember="TasnifKuruluPersonelleri.Gorevi" />
+                      </DataBindings>
+                      <StylePriority Ref="148" UseTextAlignment="false" />
+                    </Item6>
+                    <Item7 Ref="149" Name="xrTableCell52" ControlType="XRTableCell" TextAlignment="MiddleCenter" Weight="0.168397398598018">
+                      <StylePriority Ref="150" UseTextAlignment="false" />
+                    </Item7>
+                  </Cells>
+                </Item1>
+              </Rows>
+              <StylePriority Ref="151" UseBorders="false" />
+            </Item1>
+          </Controls>
+        </Item1>
+      </Bands>
+    </Item4>
+    <Item5 Ref="152" Name="DetailReport1" ControlType="DetailReportBand" Level="1">
+      <Bands>
+        <Item1 Ref="153" ControlType="DetailBand" Name="Detail2" HeightF="48.95833" />
+      </Bands>
+    </Item5>
+  </Bands>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v14.1" Ref="0" Content="~Xtra#NULL" Type="System.Windows.Forms.BindingSource" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a4c08ab58ac847a89ff3c2198eb953e6" Name="Diagram1">
+        <EntityTypeShape EntityType="ETSModel.ArsivGelenGiden" Width="1.5" PointX="8" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Ayarlar" Width="1.5" PointX="9.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Baslik" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Birimler" Width="1.5" PointX="5.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.DaimiArastirmaTutanaklari" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.EvrakiCikaranMakam" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.EvrakKategori" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.GelenEvrak" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.GidenEvrak" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.GizlilikDerecesi" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.GonderdigiMakam" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.GuvenlikNoOncelikDerecesi" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.KanunMaddeleri" Width="1.5" PointX="9.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.KimlikBilgileri" Width="1.5" PointX="10.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Komutanliklar" Width="1.5" PointX="3" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.MuzekkereCinsleri" Width="1.5" PointX="0.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.MuzekkereIcmalDefteri" Width="1.5" PointX="3" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.OlayDurumu" Width="1.5" PointX="0.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.OlaylarBilgisi" Width="1.5" PointX="5.25" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.OlayYerleri" Width="1.5" PointX="0.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Periyotlar" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Personel" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Subeler" Width="1.5" PointX="5.75" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Suclar" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.Tasnifler" Width="1.5" PointX="3" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETSModel.ZimmetDefteri" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="ETSModel.AGG_CikaranMakamID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.AGG_GizlilikDerecesiID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.AGG_IlgiliBirimID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.AGG_SubeID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.BaslikId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.PersonelId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OlayYeriId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.PeriyotId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.Personel1Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.Personel2Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.Personel3Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.Personel4Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.SucId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.EvrakiCikaranMakamG_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.EvrakiCikaranMakamId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.Kategori_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GelenE_Personel_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GelenEvrak_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GelenEvrak_OlayYeri_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GizlilikDerecesiId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GuvenlikNoOncelikDerecesiId" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OlayDurumu_ID1" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.Zimmet_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GidenEvrak_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GidenEvrak_Personel_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GizlilikDerecesi_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GonderdigiMakam_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.GuvenlikNoOncelikDerecesi_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OlayDurumu_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OlayYeri_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.Zimmet1_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.MID_KomutanlikID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OB_Komutanlik" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.MID_MuzekkereCinsi" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.MID_MahalleID" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OB_Olay" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OB_OlayYeri" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.OB_Tansif" ManuallyRouted="false" />
+        <AssociationConnector Association="ETSModel.TeslimAlan_ID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

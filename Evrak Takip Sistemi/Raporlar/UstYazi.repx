@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="14.1.4.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="RptUstYazi" DataSource="#Ref-0" Version="14.1" PageHeight="583" Landscape="true" PageWidth="827" PaperKind="A5" Margins="30, 29, 20, 32">
+  <Bands>
+    <Item1 Ref="2" ControlType="DetailBand" Name="Detail" TextAlignment="TopLeft" Font="Arial, 11pt" Padding="0,0,0,0,100" SnapLinePadding="2,2,2,2,100" HeightF="527.9581">
+      <Controls>
+        <Item1 Ref="3" Name="xrLabel8" ControlType="XRLabel" SizeF="245.8333,47.93599" LocationFloat="83.83331, 134.375" TextAlignment="TopJustify" Padding="2,2,0,0,100" CanShrink="true" Text="[OlaySorusturmaNo] Soruşturma Nu.lı Daimi Arama Kararı Araştırma Tutanağı">
+          <StylePriority Ref="4" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="5" Name="xrLabel7" ControlType="XRLabel" SizeF="681.1667,23" LocationFloat="83.83331, 237.5496" Padding="2,2,0,0,100" Text="Bozdoğan C.Başsavcılığının [DaimiAramaKarariTarihi!dd.MM.yyyy] tarihli, [OlaySorusturmaNo] Sayılı Soruşturma yazısı" />
+        <Item3 Ref="6" Name="xrLabel18" ControlType="XRLabel" SizeF="762.9998,87.66666" LocationFloat="1.999998, 282.8396" TextAlignment="TopJustify" Font="Arial, 11pt" Padding="2,2,0,0,100" CanShrink="true" Text="          İlgi sayılı yazı gereğince komutanlığımız sorumluluk alanı olan [OlayYerleri.OlayYeri]'nde meydana gelen [Suclar.Suc] olayı ile ilgili olarak [Periyotlar.Periyot] [PeriyotYili]  aylarında yapılan araştırma ile ilgili olarak tanzim edilen tutanağın EK-A'da gönderildiğini arz ederim.">
+          <StylePriority Ref="7" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="8" Name="xrLabel17" ControlType="XRLabel" SizeF="278.1523,23" LocationFloat="2, 437.2563" Font="Arial, 11pt, style=Underline" Padding="2,2,0,0,100" Text="EKİ                                                       :">
+          <StylePriority Ref="9" UseFont="false" />
+        </Item4>
+        <Item5 Ref="10" Name="xrLabel16" ControlType="XRLabel" SizeF="278.1523,23" LocationFloat="1.999998, 462.2563" Padding="2,2,0,0,100" Text="xrLabel16">
+          <DataBindings>
+            <Item1 Ref="11" FormatString="EK-A ({0} Adet Tutanak)" PropertyName="Text" DataMember="Baslik.EkSayisi" />
+          </DataBindings>
+        </Item5>
+        <Item6 Ref="12" Name="xrLabel15" ControlType="XRLabel" SizeF="181.3372,18.83334" LocationFloat="583.6627, 430.0479" Padding="2,2,0,0,100" Text="xrLabel15">
+          <DataBindings>
+            <Item1 Ref="13" PropertyName="Text" DataMember="Baslik.Personel.Tim" />
+          </DataBindings>
+        </Item6>
+        <Item7 Ref="14" Name="xrLabel14" ControlType="XRLabel" SizeF="181.3372,18.83331" LocationFloat="583.6627, 413.2563" Padding="2,2,0,0,100" Text="xrLabel14">
+          <DataBindings>
+            <Item1 Ref="15" PropertyName="Text" DataMember="Baslik.Personel.Rutbesi" />
+          </DataBindings>
+        </Item7>
+        <Item8 Ref="16" Name="xrLabel12" ControlType="XRLabel" SizeF="181.3372,18.83331" LocationFloat="583.6627, 398.4646" Padding="2,2,0,0,100" Text="xrLabel12">
+          <DataBindings>
+            <Item1 Ref="17" PropertyName="Text" DataMember="Baslik.Personel.AdiSoyadi" />
+          </DataBindings>
+        </Item8>
+        <Item9 Ref="18" Name="xrLabel10" ControlType="XRLabel" SizeF="80.09776,23" LocationFloat="1.999998, 237.5496" Font="Arial, 11pt" Padding="2,2,0,0,100" Text="İLGİ       :">
+          <StylePriority Ref="19" UseFont="false" />
+        </Item9>
+        <Item10 Ref="20" Name="lblTarih" ControlType="XRLabel" SizeF="162.5873,23" LocationFloat="602.4127, 109.375" TextAlignment="TopRight" Font="Arial, 11pt" Padding="2,2,0,0,100" Text="lblTarih">
+          <DataBindings>
+            <Item1 Ref="23" Parameter="#Ref-21" FormatString="{0:dd MMMM yyyy}" PropertyName="Text" DataMember="Tarih" />
+          </DataBindings>
+          <StylePriority Ref="24" UseFont="false" UseTextAlignment="false" />
+        </Item10>
+        <Item11 Ref="25" Name="xrLabel6" ControlType="XRLabel" SizeF="267.7083,23" LocationFloat="83.83331, 109.375" Font="Arial, 11pt" Padding="2,2,0,0,100" Text="0410 -        -[Parameters.Tarih!yy] / İd.Ks.">
+          <StylePriority Ref="26" UseFont="false" />
+        </Item11>
+        <Item12 Ref="27" Name="xrLabel5" ControlType="XRLabel" SizeF="80.09776,23" LocationFloat="1.999998, 134.375" Font="Arial, 11pt" Padding="2,2,0,0,100" Text="KONU      :">
+          <StylePriority Ref="28" UseFont="false" />
+        </Item12>
+        <Item13 Ref="29" Name="xrLabel3" ControlType="XRLabel" SizeF="80.09776,23" LocationFloat="1.999998, 109.375" Font="Arial, 11pt" Padding="2,2,0,0,100" Text="ASYŞ       :">
+          <StylePriority Ref="30" UseFont="false" />
+        </Item13>
+        <Item14 Ref="31" Name="xrLabel2" ControlType="XRLabel" SizeF="277.0833,95.8701" LocationFloat="219.8333, 0" TextAlignment="TopCenter" Font="Arial, 11pt" Padding="2,2,0,0,100" Multiline="true" Text="xrLabel2">
+          <DataBindings>
+            <Item1 Ref="32" PropertyName="Text" DataMember="Baslik.AnaBaslik" />
+          </DataBindings>
+          <StylePriority Ref="33" UseFont="false" UseTextAlignment="false" />
+        </Item14>
+        <Item15 Ref="34" Name="xrLabel4" ControlType="XRLabel" SizeF="463.5417,24.04167" LocationFloat="158.1601, 198.311" TextAlignment="TopCenter" Font="Arial, 11pt" Padding="2,2,0,0,100" Text="xrLabel4">
+          <DataBindings>
+            <Item1 Ref="35" PropertyName="Text" DataMember="Baslik.UstYaziBaslik" />
+          </DataBindings>
+          <StylePriority Ref="36" UseFont="false" UseTextAlignment="false" />
+        </Item15>
+        <Item16 Ref="37" ControlType="XRPageBreak" Name="xrPageBreak1" LocationFloat="0, 525.9581" />
+        <Item17 Ref="38" Name="xrLabel9" ControlType="XRLabel" SizeF="122.9167,23" LocationFloat="0, 0" Font="Arial, 11pt, style=Underline" Padding="2,2,0,0,100" Text="HİZMETE ÖZEL">
+          <StylePriority Ref="39" UseFont="false" />
+        </Item17>
+      </Controls>
+      <StylePriority Ref="40" UseFont="false" />
+    </Item1>
+    <Item2 Ref="41" ControlType="TopMarginBand" Name="TopMargin" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="19.58334" />
+    <Item3 Ref="42" ControlType="BottomMarginBand" Name="BottomMargin" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="32">
+      <Controls>
+        <Item1 Ref="43" Name="xrLabel11" ControlType="XRLabel" SizeF="122.9167,23" LocationFloat="0, 0" Font="Arial, 11pt, style=Underline" Padding="2,2,0,0,100" Text="HİZMETE ÖZEL">
+          <StylePriority Ref="44" UseFont="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+  </Bands>
+  <Parameters>
+    <Item1 Ref="21" Description="Üst Yazı Tarihi" Name="Tarih" Type="#Ref-45" Value="#Ref-46" />
+  </Parameters>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v14.1" Ref="45" Content="System.DateTime" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v14.1" Ref="46" Content="06/20/2014 11:25:14" Type="System.DateTime" />
+    <Item3 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v14.1" Ref="0" Content="~Xtra#NULL" Type="System.Windows.Forms.BindingSource" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

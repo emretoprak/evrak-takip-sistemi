@@ -1,0 +1,2328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ETSModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ETSModelStoreContainer">
+          <EntitySet Name="ArsivGelenGiden" EntityType="ETSModel.Store.ArsivGelenGiden" store:Type="Tables" />
+          <EntitySet Name="Ayarlar" EntityType="ETSModel.Store.Ayarlar" store:Type="Tables" />
+          <EntitySet Name="Baslik" EntityType="ETSModel.Store.Baslik" store:Type="Tables" />
+          <EntitySet Name="Birimler" EntityType="ETSModel.Store.Birimler" store:Type="Tables" />
+          <EntitySet Name="DaimiArastirmaTutanaklari" EntityType="ETSModel.Store.DaimiArastirmaTutanaklari" store:Type="Tables" />
+          <EntitySet Name="EvrakiCikaranMakam" EntityType="ETSModel.Store.EvrakiCikaranMakam" store:Type="Tables" />
+          <EntitySet Name="EvrakKategori" EntityType="ETSModel.Store.EvrakKategori" store:Type="Tables" />
+          <EntitySet Name="GelenEvrak" EntityType="ETSModel.Store.GelenEvrak" store:Type="Tables" />
+          <EntitySet Name="GidenEvrak" EntityType="ETSModel.Store.GidenEvrak" store:Type="Tables" />
+          <EntitySet Name="GizlilikDerecesi" EntityType="ETSModel.Store.GizlilikDerecesi" store:Type="Tables" />
+          <EntitySet Name="GonderdigiMakam" EntityType="ETSModel.Store.GonderdigiMakam" store:Type="Tables" />
+          <EntitySet Name="GuvenlikNoOncelikDerecesi" EntityType="ETSModel.Store.GuvenlikNoOncelikDerecesi" store:Type="Tables" />
+          <EntitySet Name="KanunMaddeleri" EntityType="ETSModel.Store.KanunMaddeleri" store:Type="Tables" />
+          <EntitySet Name="KimlikBilgileri" EntityType="ETSModel.Store.KimlikBilgileri" store:Type="Tables" />
+          <EntitySet Name="Komutanliklar" EntityType="ETSModel.Store.Komutanliklar" store:Type="Tables" />
+          <EntitySet Name="MuzekkereCinsleri" EntityType="ETSModel.Store.MuzekkereCinsleri" store:Type="Tables" />
+          <EntitySet Name="MuzekkereIcmalDefteri" EntityType="ETSModel.Store.MuzekkereIcmalDefteri" store:Type="Tables" />
+          <EntitySet Name="OlayDurumu" EntityType="ETSModel.Store.OlayDurumu" store:Type="Tables" />
+          <EntitySet Name="OlaylarBilgisi" EntityType="ETSModel.Store.OlaylarBilgisi" store:Type="Tables" />
+          <EntitySet Name="OlayYerleri" EntityType="ETSModel.Store.OlayYerleri" store:Type="Tables" />
+          <EntitySet Name="Periyotlar" EntityType="ETSModel.Store.Periyotlar" store:Type="Tables" />
+          <EntitySet Name="Personel" EntityType="ETSModel.Store.Personel" store:Type="Tables" />
+          <EntitySet Name="Subeler" EntityType="ETSModel.Store.Subeler" store:Type="Tables" />
+          <EntitySet Name="Suclar" EntityType="ETSModel.Store.Suclar" store:Type="Tables" />
+          <EntitySet Name="Tasnifler" EntityType="ETSModel.Store.Tasnifler" store:Type="Tables" />
+          <EntitySet Name="ZimmetDefteri" EntityType="ETSModel.Store.ZimmetDefteri" store:Type="Tables" />
+          <AssociationSet Name="AGG_CikaranMakamID" Association="ETSModel.Store.AGG_CikaranMakamID">
+            <End Role="EvrakiCikaranMakam" EntitySet="EvrakiCikaranMakam" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="AGG_GizlilikDerecesiID" Association="ETSModel.Store.AGG_GizlilikDerecesiID">
+            <End Role="GizlilikDerecesi" EntitySet="GizlilikDerecesi" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="AGG_IlgiliBirimID" Association="ETSModel.Store.AGG_IlgiliBirimID">
+            <End Role="Birimler" EntitySet="Birimler" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="AGG_SubeID" Association="ETSModel.Store.AGG_SubeID">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="BaslikId" Association="ETSModel.Store.BaslikId">
+            <End Role="Baslik" EntitySet="Baslik" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="EvrakiCikaranMakamG_ID" Association="ETSModel.Store.EvrakiCikaranMakamG_ID">
+            <End Role="EvrakiCikaranMakam" EntitySet="EvrakiCikaranMakam" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="EvrakiCikaranMakamId" Association="ETSModel.Store.EvrakiCikaranMakamId">
+            <End Role="EvrakiCikaranMakam" EntitySet="EvrakiCikaranMakam" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GelenE_Personel_ID" Association="ETSModel.Store.GelenE_Personel_ID">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GelenEvrak_ID" Association="ETSModel.Store.GelenEvrak_ID">
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="GelenEvrak_OlayYeri_ID" Association="ETSModel.Store.GelenEvrak_OlayYeri_ID">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GidenEvrak_ID" Association="ETSModel.Store.GidenEvrak_ID">
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="GidenEvrak_Personel_ID" Association="ETSModel.Store.GidenEvrak_Personel_ID">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GizlilikDerecesi_ID" Association="ETSModel.Store.GizlilikDerecesi_ID">
+            <End Role="GizlilikDerecesi" EntitySet="GizlilikDerecesi" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GizlilikDerecesiId" Association="ETSModel.Store.GizlilikDerecesiId">
+            <End Role="GizlilikDerecesi" EntitySet="GizlilikDerecesi" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GonderdigiMakam_ID" Association="ETSModel.Store.GonderdigiMakam_ID">
+            <End Role="GonderdigiMakam" EntitySet="GonderdigiMakam" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GuvenlikNoOncelikDerecesi_ID" Association="ETSModel.Store.GuvenlikNoOncelikDerecesi_ID">
+            <End Role="GuvenlikNoOncelikDerecesi" EntitySet="GuvenlikNoOncelikDerecesi" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GuvenlikNoOncelikDerecesiId" Association="ETSModel.Store.GuvenlikNoOncelikDerecesiId">
+            <End Role="GuvenlikNoOncelikDerecesi" EntitySet="GuvenlikNoOncelikDerecesi" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="Kategori_ID" Association="ETSModel.Store.Kategori_ID">
+            <End Role="EvrakKategori" EntitySet="EvrakKategori" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="MID_KomutanlikID" Association="ETSModel.Store.MID_KomutanlikID">
+            <End Role="Komutanliklar" EntitySet="Komutanliklar" />
+            <End Role="MuzekkereIcmalDefteri" EntitySet="MuzekkereIcmalDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="MID_MahalleID" Association="ETSModel.Store.MID_MahalleID">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="MuzekkereIcmalDefteri" EntitySet="MuzekkereIcmalDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="MID_MuzekkereCinsi" Association="ETSModel.Store.MID_MuzekkereCinsi">
+            <End Role="MuzekkereCinsleri" EntitySet="MuzekkereCinsleri" />
+            <End Role="MuzekkereIcmalDefteri" EntitySet="MuzekkereIcmalDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="OB_Komutanlik" Association="ETSModel.Store.OB_Komutanlik">
+            <End Role="Komutanliklar" EntitySet="Komutanliklar" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="OB_Olay" Association="ETSModel.Store.OB_Olay">
+            <End Role="Suclar" EntitySet="Suclar" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="OB_OlayYeri" Association="ETSModel.Store.OB_OlayYeri">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="OB_Tansif" Association="ETSModel.Store.OB_Tansif">
+            <End Role="Tasnifler" EntitySet="Tasnifler" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="OlayDurumu_ID" Association="ETSModel.Store.OlayDurumu_ID">
+            <End Role="OlayDurumu" EntitySet="OlayDurumu" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="OlayDurumu_ID1" Association="ETSModel.Store.OlayDurumu_ID1">
+            <End Role="OlayDurumu" EntitySet="OlayDurumu" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="OlayYeri_ID" Association="ETSModel.Store.OlayYeri_ID">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="OlayYeriId" Association="ETSModel.Store.OlayYeriId">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="PeriyotId" Association="ETSModel.Store.PeriyotId">
+            <End Role="Periyotlar" EntitySet="Periyotlar" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel1Id" Association="ETSModel.Store.Personel1Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel2Id" Association="ETSModel.Store.Personel2Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel3Id" Association="ETSModel.Store.Personel3Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel4Id" Association="ETSModel.Store.Personel4Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="PersonelId" Association="ETSModel.Store.PersonelId">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="Baslik" EntitySet="Baslik" />
+          </AssociationSet>
+          <AssociationSet Name="SucId" Association="ETSModel.Store.SucId">
+            <End Role="Suclar" EntitySet="Suclar" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="TeslimAlan_ID" Association="ETSModel.Store.TeslimAlan_ID">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="Zimmet_ID" Association="ETSModel.Store.Zimmet_ID">
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="Zimmet1_ID" Association="ETSModel.Store.Zimmet1_ID">
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ArsivGelenGiden">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IlkEvrak" Type="bigint" Nullable="false" />
+          <Property Name="IlgiliEvrak" Type="bigint" />
+          <Property Name="DosyaNo" Type="bigint" />
+          <Property Name="Tarih" Type="datetime" Nullable="false" />
+          <Property Name="SubeId" Type="int" Nullable="false" />
+          <Property Name="EsasKonuNo" Type="int" Nullable="false" />
+          <Property Name="AraSayiNo" Type="int" Nullable="false" />
+          <Property Name="Yil" Type="int" Nullable="false" />
+          <Property Name="IlgiliBirimId" Type="int" Nullable="false" />
+          <Property Name="CikaranMakamId" Type="int" Nullable="false" />
+          <Property Name="Konusu" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="GizililikDerecesiId" Type="int" Nullable="false" />
+          <Property Name="EkSayisi" Type="int" Nullable="false" />
+          <Property Name="ImhaYili" Type="int" />
+          <Property Name="GelenEvrakId" Type="bigint" />
+          <Property Name="GidenEvrakId" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Ayarlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GelenEvrakEkGun" Type="int" Nullable="false" />
+          <Property Name="GidenEvrakEkGun" Type="int" Nullable="false" />
+          <Property Name="GelenEvrakKontrol" Type="bit" />
+          <Property Name="GidenEvrakKontrol" Type="bit" />
+          <Property Name="DaimiAramaTKontrol" Type="bit" />
+          <Property Name="DaimiAramaEkGun" Type="int" Nullable="false" />
+          <Property Name="GelenEvrakKontrolSuresi" Type="int" />
+          <Property Name="GidenEvrakKontrolSuresi" Type="int" />
+          <Property Name="DaimiAramaKontrolSuresi" Type="int" />
+        </EntityType>
+        <EntityType Name="Baslik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AnaBaslik" Type="ntext" Nullable="false" />
+          <Property Name="PersonelId" Type="int" Nullable="false" />
+          <Property Name="UstYaziBaslik" Type="ntext" Nullable="false" />
+          <Property Name="EkSayisi" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Birimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Birim" Type="nvarchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="DaimiArastirmaTutanaklari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Kimlikler" Type="ntext" Nullable="false" />
+          <Property Name="SucId" Type="int" Nullable="false" />
+          <Property Name="OlayTarihi" Type="datetime" Nullable="false" />
+          <Property Name="OlayYeriId" Type="int" Nullable="false" />
+          <Property Name="OlaySorusturmaNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DaimiAramaNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DaimiAramaKarariTarihi" Type="datetime" Nullable="false" />
+          <Property Name="ZamanAsimi" Type="datetime" Nullable="false" />
+          <Property Name="Ozet" Type="ntext" Nullable="false" />
+          <Property Name="Durum" Type="int" Nullable="false" />
+          <Property Name="Personel1Id" Type="int" Nullable="false" />
+          <Property Name="Personel2Id" Type="int" Nullable="false" />
+          <Property Name="Personel3Id" Type="int" />
+          <Property Name="Personel4Id" Type="int" />
+          <Property Name="PeriyotYili" Type="int" Nullable="false" />
+          <Property Name="BaslikId" Type="int" Nullable="false" />
+          <Property Name="PeriyotId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EvrakiCikaranMakam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Makam" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="EvrakKategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Kategori" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GelenEvrak">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EvrakKayitNo" Type="bigint" Nullable="false" />
+          <Property Name="EvrakKayitTarihi" Type="datetime" Nullable="false" />
+          <Property Name="EvrakiCikaranMakamId" Type="int" Nullable="false" />
+          <Property Name="TarihTSG" Type="datetime" Nullable="false" />
+          <Property Name="DosyaNoKonusu" Type="ntext" Nullable="false" />
+          <Property Name="GizlilikDerecesiId" Type="int" Nullable="false" />
+          <Property Name="GuvenlikNoOncelikDerecesiId" Type="int" Nullable="false" />
+          <Property Name="Aciklama" Type="ntext" Nullable="false" />
+          <Property Name="Durum" Type="int" Nullable="false" />
+          <Property Name="EvrakSonTarihi" Type="datetime" Nullable="false" />
+          <Property Name="ZimmetId" Type="bigint" />
+          <Property Name="OlayDurumuId" Type="int" Nullable="false" />
+          <Property Name="PersonelId" Type="int" Nullable="false" />
+          <Property Name="OlayYeriId" Type="int" />
+          <Property Name="Arsivlendi" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GidenEvrak">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EvrakKayitNo" Type="bigint" Nullable="false" />
+          <Property Name="EvrakKayitTarihi" Type="datetime" Nullable="false" />
+          <Property Name="EvrakiCikaranMakamId" Type="int" />
+          <Property Name="TarihTSG" Type="datetime" Nullable="false" />
+          <Property Name="DosyaNoKonusu" Type="ntext" Nullable="false" />
+          <Property Name="GizlilikDerecesiId" Type="int" Nullable="false" />
+          <Property Name="GuvenlikNoOncelikDerecesiId" Type="int" Nullable="false" />
+          <Property Name="GonderdigiMakamId" Type="int" Nullable="false" />
+          <Property Name="Aciklama" Type="ntext" Nullable="false" />
+          <Property Name="Durum" Type="int" Nullable="false" />
+          <Property Name="EvrakSonTarihi" Type="datetime" Nullable="false" />
+          <Property Name="OlayDurumuId" Type="int" Nullable="false" />
+          <Property Name="ZimmetId" Type="bigint" />
+          <Property Name="OlayYeriId" Type="int" />
+          <Property Name="PersonelId" Type="int" />
+          <Property Name="Arsivlendi" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GizlilikDerecesi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Derece" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GonderdigiMakam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Makam" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="GuvenlikNoOncelikDerecesi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Derece" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KanunMaddeleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KanunMaddesi" Type="nvarchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="KimlikBilgileri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TCKimlikNo" Type="bigint" />
+          <Property Name="Adi" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Soyadi" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="BabaAdi" Type="nvarchar" MaxLength="255" />
+          <Property Name="DogumTarihi" Type="datetime" />
+          <Property Name="Adresi" Type="ntext" />
+          <Property Name="Telefon" Type="bigint" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Komutanliklar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Komutanlik" Type="nvarchar" Nullable="false" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="MuzekkereCinsleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Muzekkere" Type="nvarchar" Nullable="false" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="MuzekkereIcmalDefteri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SiraNo" Type="bigint" Nullable="false" />
+          <Property Name="DosyaNo" Type="nvarchar" Nullable="false" MaxLength="15" />
+          <Property Name="AdiSoyadi" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="GeldigiTarih" Type="datetime" Nullable="false" />
+          <Property Name="GonderildigiTarih" Type="datetime" />
+          <Property Name="Durum" Type="int" Nullable="false" />
+          <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
+          <Property Name="MahalleId" Type="int" Nullable="false" />
+          <Property Name="MuzekkereCinsiId" Type="int" Nullable="false" />
+          <Property Name="KomutanlikId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OlayDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Durum" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="OlaylarBilgisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SiraNo" Type="bigint" Nullable="false" />
+          <Property Name="OlayBilNo" Type="numeric" Nullable="false" Precision="9" />
+          <Property Name="OlayTarihi" Type="datetime" Nullable="false" />
+          <Property Name="OlayYeriId" Type="int" Nullable="false" />
+          <Property Name="OlayId" Type="int" Nullable="false" />
+          <Property Name="KomutanlikId" Type="int" />
+          <Property Name="TansifId" Type="int" />
+        </EntityType>
+        <EntityType Name="OlayYerleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OlayYeri" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Periyotlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Periyot" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Soyadi" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Rutbesi" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Tim" Type="nvarchar" MaxLength="255" />
+          <Property Name="Durum" Type="int" Nullable="false" />
+          <Property Name="TamIsim" Type="nvarchar" MaxLength="100" />
+          <Property Name="AdiSoyadi" Type="nvarchar" MaxLength="201" />
+          <Property Name="Sicili" Type="nvarchar" MaxLength="200" />
+          <Property Name="Gorevi" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Subeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sube" Type="nvarchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Suclar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Suc" Type="nvarchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Tasnifler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="AltBaslik" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="Suc" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="Grup" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="KanunMaddesi" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="ZimmetDefteri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SiraNo" Type="bigint" Nullable="false" />
+          <Property Name="ZimmetTarihi" Type="datetime" Nullable="false" />
+          <Property Name="TeslimAlanId" Type="int" Nullable="false" />
+          <Property Name="KategoriId" Type="int" Nullable="false" />
+          <Property Name="GelenEvrakId" Type="bigint" />
+          <Property Name="GidenEvrakId" Type="bigint" />
+        </EntityType>
+        <Association Name="AGG_CikaranMakamID">
+          <End Role="EvrakiCikaranMakam" Type="ETSModel.Store.EvrakiCikaranMakam" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.Store.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakiCikaranMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="CikaranMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AGG_GizlilikDerecesiID">
+          <End Role="GizlilikDerecesi" Type="ETSModel.Store.GizlilikDerecesi" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.Store.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GizlilikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="GizililikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AGG_IlgiliBirimID">
+          <End Role="Birimler" Type="ETSModel.Store.Birimler" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.Store.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Birimler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="IlgiliBirimId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AGG_SubeID">
+          <End Role="Subeler" Type="ETSModel.Store.Subeler" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.Store.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="SubeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BaslikId">
+          <End Role="Baslik" Type="ETSModel.Store.Baslik" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Baslik">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="BaslikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EvrakiCikaranMakamG_ID">
+          <End Role="EvrakiCikaranMakam" Type="ETSModel.Store.EvrakiCikaranMakam" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakiCikaranMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="EvrakiCikaranMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EvrakiCikaranMakamId">
+          <End Role="EvrakiCikaranMakam" Type="ETSModel.Store.EvrakiCikaranMakam" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakiCikaranMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="EvrakiCikaranMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GelenE_Personel_ID">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="PersonelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GelenEvrak_ID">
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="0..1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.Store.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GelenEvrak">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="GelenEvrakId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GelenEvrak_OlayYeri_ID">
+          <End Role="OlayYerleri" Type="ETSModel.Store.OlayYerleri" Multiplicity="0..1" />
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GidenEvrak_ID">
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="0..1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.Store.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GidenEvrak">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="GidenEvrakId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GidenEvrak_Personel_ID">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="0..1" />
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="PersonelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GizlilikDerecesi_ID">
+          <End Role="GizlilikDerecesi" Type="ETSModel.Store.GizlilikDerecesi" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GizlilikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="GizlilikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GizlilikDerecesiId">
+          <End Role="GizlilikDerecesi" Type="ETSModel.Store.GizlilikDerecesi" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GizlilikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="GizlilikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GonderdigiMakam_ID">
+          <End Role="GonderdigiMakam" Type="ETSModel.Store.GonderdigiMakam" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GonderdigiMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="GonderdigiMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GuvenlikNoOncelikDerecesi_ID">
+          <End Role="GuvenlikNoOncelikDerecesi" Type="ETSModel.Store.GuvenlikNoOncelikDerecesi" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GuvenlikNoOncelikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="GuvenlikNoOncelikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GuvenlikNoOncelikDerecesiId">
+          <End Role="GuvenlikNoOncelikDerecesi" Type="ETSModel.Store.GuvenlikNoOncelikDerecesi" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GuvenlikNoOncelikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="GuvenlikNoOncelikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Kategori_ID">
+          <End Role="EvrakKategori" Type="ETSModel.Store.EvrakKategori" Multiplicity="1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.Store.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakKategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="KategoriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MID_KomutanlikID">
+          <End Role="Komutanliklar" Type="ETSModel.Store.Komutanliklar" Multiplicity="1" />
+          <End Role="MuzekkereIcmalDefteri" Type="ETSModel.Store.MuzekkereIcmalDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Komutanliklar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MuzekkereIcmalDefteri">
+              <PropertyRef Name="KomutanlikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MID_MahalleID">
+          <End Role="OlayYerleri" Type="ETSModel.Store.OlayYerleri" Multiplicity="1" />
+          <End Role="MuzekkereIcmalDefteri" Type="ETSModel.Store.MuzekkereIcmalDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MuzekkereIcmalDefteri">
+              <PropertyRef Name="MahalleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MID_MuzekkereCinsi">
+          <End Role="MuzekkereCinsleri" Type="ETSModel.Store.MuzekkereCinsleri" Multiplicity="1" />
+          <End Role="MuzekkereIcmalDefteri" Type="ETSModel.Store.MuzekkereIcmalDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MuzekkereCinsleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MuzekkereIcmalDefteri">
+              <PropertyRef Name="MuzekkereCinsiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_Komutanlik">
+          <End Role="Komutanliklar" Type="ETSModel.Store.Komutanliklar" Multiplicity="0..1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.Store.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Komutanliklar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="KomutanlikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_Olay">
+          <End Role="Suclar" Type="ETSModel.Store.Suclar" Multiplicity="1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.Store.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suclar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="OlayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_OlayYeri">
+          <End Role="OlayYerleri" Type="ETSModel.Store.OlayYerleri" Multiplicity="1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.Store.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_Tansif">
+          <End Role="Tasnifler" Type="ETSModel.Store.Tasnifler" Multiplicity="0..1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.Store.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tasnifler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="TansifId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayDurumu_ID">
+          <End Role="OlayDurumu" Type="ETSModel.Store.OlayDurumu" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="OlayDurumuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayDurumu_ID1">
+          <End Role="OlayDurumu" Type="ETSModel.Store.OlayDurumu" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="OlayDurumuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayYeri_ID">
+          <End Role="OlayYerleri" Type="ETSModel.Store.OlayYerleri" Multiplicity="0..1" />
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayYeriId">
+          <End Role="OlayYerleri" Type="ETSModel.Store.OlayYerleri" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PeriyotId">
+          <End Role="Periyotlar" Type="ETSModel.Store.Periyotlar" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Periyotlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="PeriyotId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel1Id">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel1Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel2Id">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel2Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel3Id">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="0..1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel3Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel4Id">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="0..1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel4Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PersonelId">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="1" />
+          <End Role="Baslik" Type="ETSModel.Store.Baslik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Baslik">
+              <PropertyRef Name="PersonelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SucId">
+          <End Role="Suclar" Type="ETSModel.Store.Suclar" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.Store.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suclar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="SucId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TeslimAlan_ID">
+          <End Role="Personel" Type="ETSModel.Store.Personel" Multiplicity="1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.Store.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="TeslimAlanId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Zimmet_ID">
+          <End Role="ZimmetDefteri" Type="ETSModel.Store.ZimmetDefteri" Multiplicity="0..1" />
+          <End Role="GelenEvrak" Type="ETSModel.Store.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ZimmetDefteri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="ZimmetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Zimmet1_ID">
+          <End Role="ZimmetDefteri" Type="ETSModel.Store.ZimmetDefteri" Multiplicity="0..1" />
+          <End Role="GidenEvrak" Type="ETSModel.Store.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ZimmetDefteri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="ZimmetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ETSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ETSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ArsivGelenGiden" EntityType="ETSModel.ArsivGelenGiden" />
+          <EntitySet Name="Ayarlar" EntityType="ETSModel.Ayarlar" />
+          <EntitySet Name="Baslik" EntityType="ETSModel.Baslik" />
+          <EntitySet Name="Birimler" EntityType="ETSModel.Birimler" />
+          <EntitySet Name="DaimiArastirmaTutanaklari" EntityType="ETSModel.DaimiArastirmaTutanaklari" />
+          <EntitySet Name="EvrakiCikaranMakam" EntityType="ETSModel.EvrakiCikaranMakam" />
+          <EntitySet Name="EvrakKategori" EntityType="ETSModel.EvrakKategori" />
+          <EntitySet Name="GelenEvrak" EntityType="ETSModel.GelenEvrak" />
+          <EntitySet Name="GidenEvrak" EntityType="ETSModel.GidenEvrak" />
+          <EntitySet Name="GizlilikDerecesi" EntityType="ETSModel.GizlilikDerecesi" />
+          <EntitySet Name="GonderdigiMakam" EntityType="ETSModel.GonderdigiMakam" />
+          <EntitySet Name="GuvenlikNoOncelikDerecesi" EntityType="ETSModel.GuvenlikNoOncelikDerecesi" />
+          <EntitySet Name="KanunMaddeleri" EntityType="ETSModel.KanunMaddeleri" />
+          <EntitySet Name="KimlikBilgileri" EntityType="ETSModel.KimlikBilgileri" />
+          <EntitySet Name="Komutanliklar" EntityType="ETSModel.Komutanliklar" />
+          <EntitySet Name="MuzekkereCinsleri" EntityType="ETSModel.MuzekkereCinsleri" />
+          <EntitySet Name="MuzekkereIcmalDefteri" EntityType="ETSModel.MuzekkereIcmalDefteri" />
+          <EntitySet Name="OlayDurumu" EntityType="ETSModel.OlayDurumu" />
+          <EntitySet Name="OlaylarBilgisi" EntityType="ETSModel.OlaylarBilgisi" />
+          <EntitySet Name="OlayYerleri" EntityType="ETSModel.OlayYerleri" />
+          <EntitySet Name="Periyotlar" EntityType="ETSModel.Periyotlar" />
+          <EntitySet Name="Personel" EntityType="ETSModel.Personel" />
+          <EntitySet Name="Subeler" EntityType="ETSModel.Subeler" />
+          <EntitySet Name="Suclar" EntityType="ETSModel.Suclar" />
+          <EntitySet Name="Tasnifler" EntityType="ETSModel.Tasnifler" />
+          <EntitySet Name="ZimmetDefteri" EntityType="ETSModel.ZimmetDefteri" />
+          <AssociationSet Name="AGG_CikaranMakamID" Association="ETSModel.AGG_CikaranMakamID">
+            <End Role="EvrakiCikaranMakam" EntitySet="EvrakiCikaranMakam" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="AGG_GizlilikDerecesiID" Association="ETSModel.AGG_GizlilikDerecesiID">
+            <End Role="GizlilikDerecesi" EntitySet="GizlilikDerecesi" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="AGG_IlgiliBirimID" Association="ETSModel.AGG_IlgiliBirimID">
+            <End Role="Birimler" EntitySet="Birimler" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="AGG_SubeID" Association="ETSModel.AGG_SubeID">
+            <End Role="Subeler" EntitySet="Subeler" />
+            <End Role="ArsivGelenGiden" EntitySet="ArsivGelenGiden" />
+          </AssociationSet>
+          <AssociationSet Name="BaslikId" Association="ETSModel.BaslikId">
+            <End Role="Baslik" EntitySet="Baslik" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="PersonelId" Association="ETSModel.PersonelId">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="Baslik" EntitySet="Baslik" />
+          </AssociationSet>
+          <AssociationSet Name="OlayYeriId" Association="ETSModel.OlayYeriId">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="PeriyotId" Association="ETSModel.PeriyotId">
+            <End Role="Periyotlar" EntitySet="Periyotlar" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel1Id" Association="ETSModel.Personel1Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel2Id" Association="ETSModel.Personel2Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel3Id" Association="ETSModel.Personel3Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="Personel4Id" Association="ETSModel.Personel4Id">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="SucId" Association="ETSModel.SucId">
+            <End Role="Suclar" EntitySet="Suclar" />
+            <End Role="DaimiArastirmaTutanaklari" EntitySet="DaimiArastirmaTutanaklari" />
+          </AssociationSet>
+          <AssociationSet Name="EvrakiCikaranMakamG_ID" Association="ETSModel.EvrakiCikaranMakamG_ID">
+            <End Role="EvrakiCikaranMakam" EntitySet="EvrakiCikaranMakam" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="EvrakiCikaranMakamId" Association="ETSModel.EvrakiCikaranMakamId">
+            <End Role="EvrakiCikaranMakam" EntitySet="EvrakiCikaranMakam" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="Kategori_ID" Association="ETSModel.Kategori_ID">
+            <End Role="EvrakKategori" EntitySet="EvrakKategori" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="GelenE_Personel_ID" Association="ETSModel.GelenE_Personel_ID">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GelenEvrak_ID" Association="ETSModel.GelenEvrak_ID">
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="GelenEvrak_OlayYeri_ID" Association="ETSModel.GelenEvrak_OlayYeri_ID">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GizlilikDerecesiId" Association="ETSModel.GizlilikDerecesiId">
+            <End Role="GizlilikDerecesi" EntitySet="GizlilikDerecesi" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GuvenlikNoOncelikDerecesiId" Association="ETSModel.GuvenlikNoOncelikDerecesiId">
+            <End Role="GuvenlikNoOncelikDerecesi" EntitySet="GuvenlikNoOncelikDerecesi" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="OlayDurumu_ID1" Association="ETSModel.OlayDurumu_ID1">
+            <End Role="OlayDurumu" EntitySet="OlayDurumu" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="Zimmet_ID" Association="ETSModel.Zimmet_ID">
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+            <End Role="GelenEvrak" EntitySet="GelenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GidenEvrak_ID" Association="ETSModel.GidenEvrak_ID">
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="GidenEvrak_Personel_ID" Association="ETSModel.GidenEvrak_Personel_ID">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GizlilikDerecesi_ID" Association="ETSModel.GizlilikDerecesi_ID">
+            <End Role="GizlilikDerecesi" EntitySet="GizlilikDerecesi" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GonderdigiMakam_ID" Association="ETSModel.GonderdigiMakam_ID">
+            <End Role="GonderdigiMakam" EntitySet="GonderdigiMakam" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="GuvenlikNoOncelikDerecesi_ID" Association="ETSModel.GuvenlikNoOncelikDerecesi_ID">
+            <End Role="GuvenlikNoOncelikDerecesi" EntitySet="GuvenlikNoOncelikDerecesi" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="OlayDurumu_ID" Association="ETSModel.OlayDurumu_ID">
+            <End Role="OlayDurumu" EntitySet="OlayDurumu" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="OlayYeri_ID" Association="ETSModel.OlayYeri_ID">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="Zimmet1_ID" Association="ETSModel.Zimmet1_ID">
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+            <End Role="GidenEvrak" EntitySet="GidenEvrak" />
+          </AssociationSet>
+          <AssociationSet Name="MID_KomutanlikID" Association="ETSModel.MID_KomutanlikID">
+            <End Role="Komutanliklar" EntitySet="Komutanliklar" />
+            <End Role="MuzekkereIcmalDefteri" EntitySet="MuzekkereIcmalDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="OB_Komutanlik" Association="ETSModel.OB_Komutanlik">
+            <End Role="Komutanliklar" EntitySet="Komutanliklar" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="MID_MuzekkereCinsi" Association="ETSModel.MID_MuzekkereCinsi">
+            <End Role="MuzekkereCinsleri" EntitySet="MuzekkereCinsleri" />
+            <End Role="MuzekkereIcmalDefteri" EntitySet="MuzekkereIcmalDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="MID_MahalleID" Association="ETSModel.MID_MahalleID">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="MuzekkereIcmalDefteri" EntitySet="MuzekkereIcmalDefteri" />
+          </AssociationSet>
+          <AssociationSet Name="OB_Olay" Association="ETSModel.OB_Olay">
+            <End Role="Suclar" EntitySet="Suclar" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="OB_OlayYeri" Association="ETSModel.OB_OlayYeri">
+            <End Role="OlayYerleri" EntitySet="OlayYerleri" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="OB_Tansif" Association="ETSModel.OB_Tansif">
+            <End Role="Tasnifler" EntitySet="Tasnifler" />
+            <End Role="OlaylarBilgisi" EntitySet="OlaylarBilgisi" />
+          </AssociationSet>
+          <AssociationSet Name="TeslimAlan_ID" Association="ETSModel.TeslimAlan_ID">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="ZimmetDefteri" EntitySet="ZimmetDefteri" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ArsivGelenGiden">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IlkEvrak" Type="Int64" Nullable="false" />
+          <Property Name="IlgiliEvrak" Type="Int64" />
+          <Property Name="DosyaNo" Type="Int64" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SubeId" Type="Int32" Nullable="false" />
+          <Property Name="EsasKonuNo" Type="Int32" Nullable="false" />
+          <Property Name="AraSayiNo" Type="Int32" Nullable="false" />
+          <Property Name="Yil" Type="Int32" Nullable="false" />
+          <Property Name="IlgiliBirimId" Type="Int32" Nullable="false" />
+          <Property Name="CikaranMakamId" Type="Int32" Nullable="false" />
+          <Property Name="Konusu" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="GizililikDerecesiId" Type="Int32" Nullable="false" />
+          <Property Name="EkSayisi" Type="Int32" Nullable="false" />
+          <Property Name="ImhaYili" Type="Int32" />
+          <Property Name="GelenEvrakId" Type="Int64" />
+          <Property Name="GidenEvrakId" Type="Int64" />
+          <NavigationProperty Name="EvrakiCikaranMakam" Relationship="ETSModel.AGG_CikaranMakamID" FromRole="ArsivGelenGiden" ToRole="EvrakiCikaranMakam" />
+          <NavigationProperty Name="GizlilikDerecesi" Relationship="ETSModel.AGG_GizlilikDerecesiID" FromRole="ArsivGelenGiden" ToRole="GizlilikDerecesi" />
+          <NavigationProperty Name="Birimler" Relationship="ETSModel.AGG_IlgiliBirimID" FromRole="ArsivGelenGiden" ToRole="Birimler" />
+          <NavigationProperty Name="Subeler" Relationship="ETSModel.AGG_SubeID" FromRole="ArsivGelenGiden" ToRole="Subeler" />
+        </EntityType>
+        <EntityType Name="Ayarlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GelenEvrakEkGun" Type="Int32" Nullable="false" />
+          <Property Name="GidenEvrakEkGun" Type="Int32" Nullable="false" />
+          <Property Name="GelenEvrakKontrol" Type="Boolean" />
+          <Property Name="GidenEvrakKontrol" Type="Boolean" />
+          <Property Name="DaimiAramaTKontrol" Type="Boolean" />
+          <Property Name="DaimiAramaEkGun" Type="Int32" Nullable="false" />
+          <Property Name="GelenEvrakKontrolSuresi" Type="Int32" />
+          <Property Name="GidenEvrakKontrolSuresi" Type="Int32" />
+          <Property Name="DaimiAramaKontrolSuresi" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Baslik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AnaBaslik" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PersonelId" Type="Int32" Nullable="false" />
+          <Property Name="UstYaziBaslik" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="EkSayisi" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari" Relationship="ETSModel.BaslikId" FromRole="Baslik" ToRole="DaimiArastirmaTutanaklari" />
+          <NavigationProperty Name="Personel" Relationship="ETSModel.PersonelId" FromRole="Baslik" ToRole="Personel" />
+        </EntityType>
+        <EntityType Name="Birimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Birim" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ArsivGelenGiden" Relationship="ETSModel.AGG_IlgiliBirimID" FromRole="Birimler" ToRole="ArsivGelenGiden" />
+        </EntityType>
+        <EntityType Name="DaimiArastirmaTutanaklari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kimlikler" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SucId" Type="Int32" Nullable="false" />
+          <Property Name="OlayTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OlayYeriId" Type="Int32" Nullable="false" />
+          <Property Name="OlaySorusturmaNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DaimiAramaNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DaimiAramaKarariTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ZamanAsimi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Ozet" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Durum" Type="Int32" Nullable="false" />
+          <Property Name="Personel1Id" Type="Int32" Nullable="false" />
+          <Property Name="Personel2Id" Type="Int32" Nullable="false" />
+          <Property Name="Personel3Id" Type="Int32" />
+          <Property Name="Personel4Id" Type="Int32" />
+          <Property Name="PeriyotYili" Type="Int32" Nullable="false" />
+          <Property Name="BaslikId" Type="Int32" Nullable="false" />
+          <Property Name="PeriyotId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Baslik" Relationship="ETSModel.BaslikId" FromRole="DaimiArastirmaTutanaklari" ToRole="Baslik" />
+          <NavigationProperty Name="OlayYerleri" Relationship="ETSModel.OlayYeriId" FromRole="DaimiArastirmaTutanaklari" ToRole="OlayYerleri" />
+          <NavigationProperty Name="Periyotlar" Relationship="ETSModel.PeriyotId" FromRole="DaimiArastirmaTutanaklari" ToRole="Periyotlar" />
+          <NavigationProperty Name="Personel" Relationship="ETSModel.Personel1Id" FromRole="DaimiArastirmaTutanaklari" ToRole="Personel" />
+          <NavigationProperty Name="Personel1" Relationship="ETSModel.Personel2Id" FromRole="DaimiArastirmaTutanaklari" ToRole="Personel" />
+          <NavigationProperty Name="Personel2" Relationship="ETSModel.Personel3Id" FromRole="DaimiArastirmaTutanaklari" ToRole="Personel" />
+          <NavigationProperty Name="Personel3" Relationship="ETSModel.Personel4Id" FromRole="DaimiArastirmaTutanaklari" ToRole="Personel" />
+          <NavigationProperty Name="Suclar" Relationship="ETSModel.SucId" FromRole="DaimiArastirmaTutanaklari" ToRole="Suclar" />
+        </EntityType>
+        <EntityType Name="EvrakiCikaranMakam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Makam" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ArsivGelenGiden" Relationship="ETSModel.AGG_CikaranMakamID" FromRole="EvrakiCikaranMakam" ToRole="ArsivGelenGiden" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.EvrakiCikaranMakamG_ID" FromRole="EvrakiCikaranMakam" ToRole="GidenEvrak" />
+          <NavigationProperty Name="GelenEvrak" Relationship="ETSModel.EvrakiCikaranMakamId" FromRole="EvrakiCikaranMakam" ToRole="GelenEvrak" />
+        </EntityType>
+        <EntityType Name="EvrakKategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kategori" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ZimmetDefteri" Relationship="ETSModel.Kategori_ID" FromRole="EvrakKategori" ToRole="ZimmetDefteri" />
+        </EntityType>
+        <EntityType Name="GelenEvrak">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EvrakKayitNo" Type="Int64" Nullable="false" />
+          <Property Name="EvrakKayitTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EvrakiCikaranMakamId" Type="Int32" Nullable="false" />
+          <Property Name="TarihTSG" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DosyaNoKonusu" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="GizlilikDerecesiId" Type="Int32" Nullable="false" />
+          <Property Name="GuvenlikNoOncelikDerecesiId" Type="Int32" Nullable="false" />
+          <Property Name="Aciklama" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Durum" Type="Int32" Nullable="false" />
+          <Property Name="EvrakSonTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ZimmetId" Type="Int64" />
+          <Property Name="OlayDurumuId" Type="Int32" Nullable="false" />
+          <Property Name="PersonelId" Type="Int32" Nullable="false" />
+          <Property Name="OlayYeriId" Type="Int32" />
+          <Property Name="Arsivlendi" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="EvrakiCikaranMakam" Relationship="ETSModel.EvrakiCikaranMakamId" FromRole="GelenEvrak" ToRole="EvrakiCikaranMakam" />
+          <NavigationProperty Name="Personel" Relationship="ETSModel.GelenE_Personel_ID" FromRole="GelenEvrak" ToRole="Personel" />
+          <NavigationProperty Name="ZimmetDefteri" Relationship="ETSModel.GelenEvrak_ID" FromRole="GelenEvrak" ToRole="ZimmetDefteri" />
+          <NavigationProperty Name="OlayYerleri" Relationship="ETSModel.GelenEvrak_OlayYeri_ID" FromRole="GelenEvrak" ToRole="OlayYerleri" />
+          <NavigationProperty Name="GizlilikDerecesi" Relationship="ETSModel.GizlilikDerecesiId" FromRole="GelenEvrak" ToRole="GizlilikDerecesi" />
+          <NavigationProperty Name="GuvenlikNoOncelikDerecesi" Relationship="ETSModel.GuvenlikNoOncelikDerecesiId" FromRole="GelenEvrak" ToRole="GuvenlikNoOncelikDerecesi" />
+          <NavigationProperty Name="OlayDurumu" Relationship="ETSModel.OlayDurumu_ID1" FromRole="GelenEvrak" ToRole="OlayDurumu" />
+          <NavigationProperty Name="ZimmetDefteri1" Relationship="ETSModel.Zimmet_ID" FromRole="GelenEvrak" ToRole="ZimmetDefteri" />
+        </EntityType>
+        <EntityType Name="GidenEvrak">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EvrakKayitNo" Type="Int64" Nullable="false" />
+          <Property Name="EvrakKayitTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EvrakiCikaranMakamId" Type="Int32" />
+          <Property Name="TarihTSG" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DosyaNoKonusu" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="GizlilikDerecesiId" Type="Int32" Nullable="false" />
+          <Property Name="GuvenlikNoOncelikDerecesiId" Type="Int32" Nullable="false" />
+          <Property Name="GonderdigiMakamId" Type="Int32" Nullable="false" />
+          <Property Name="Aciklama" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Durum" Type="Int32" Nullable="false" />
+          <Property Name="EvrakSonTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OlayDurumuId" Type="Int32" Nullable="false" />
+          <Property Name="ZimmetId" Type="Int64" />
+          <Property Name="OlayYeriId" Type="Int32" />
+          <Property Name="PersonelId" Type="Int32" />
+          <Property Name="Arsivlendi" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="EvrakiCikaranMakam" Relationship="ETSModel.EvrakiCikaranMakamG_ID" FromRole="GidenEvrak" ToRole="EvrakiCikaranMakam" />
+          <NavigationProperty Name="ZimmetDefteri" Relationship="ETSModel.GidenEvrak_ID" FromRole="GidenEvrak" ToRole="ZimmetDefteri" />
+          <NavigationProperty Name="Personel" Relationship="ETSModel.GidenEvrak_Personel_ID" FromRole="GidenEvrak" ToRole="Personel" />
+          <NavigationProperty Name="GizlilikDerecesi" Relationship="ETSModel.GizlilikDerecesi_ID" FromRole="GidenEvrak" ToRole="GizlilikDerecesi" />
+          <NavigationProperty Name="GonderdigiMakam" Relationship="ETSModel.GonderdigiMakam_ID" FromRole="GidenEvrak" ToRole="GonderdigiMakam" />
+          <NavigationProperty Name="GuvenlikNoOncelikDerecesi" Relationship="ETSModel.GuvenlikNoOncelikDerecesi_ID" FromRole="GidenEvrak" ToRole="GuvenlikNoOncelikDerecesi" />
+          <NavigationProperty Name="OlayDurumu" Relationship="ETSModel.OlayDurumu_ID" FromRole="GidenEvrak" ToRole="OlayDurumu" />
+          <NavigationProperty Name="OlayYerleri" Relationship="ETSModel.OlayYeri_ID" FromRole="GidenEvrak" ToRole="OlayYerleri" />
+          <NavigationProperty Name="ZimmetDefteri1" Relationship="ETSModel.Zimmet1_ID" FromRole="GidenEvrak" ToRole="ZimmetDefteri" />
+        </EntityType>
+        <EntityType Name="GizlilikDerecesi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Derece" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ArsivGelenGiden" Relationship="ETSModel.AGG_GizlilikDerecesiID" FromRole="GizlilikDerecesi" ToRole="ArsivGelenGiden" />
+          <NavigationProperty Name="GelenEvrak" Relationship="ETSModel.GizlilikDerecesiId" FromRole="GizlilikDerecesi" ToRole="GelenEvrak" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.GizlilikDerecesi_ID" FromRole="GizlilikDerecesi" ToRole="GidenEvrak" />
+        </EntityType>
+        <EntityType Name="GonderdigiMakam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Makam" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.GonderdigiMakam_ID" FromRole="GonderdigiMakam" ToRole="GidenEvrak" />
+        </EntityType>
+        <EntityType Name="GuvenlikNoOncelikDerecesi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Derece" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="GelenEvrak" Relationship="ETSModel.GuvenlikNoOncelikDerecesiId" FromRole="GuvenlikNoOncelikDerecesi" ToRole="GelenEvrak" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.GuvenlikNoOncelikDerecesi_ID" FromRole="GuvenlikNoOncelikDerecesi" ToRole="GidenEvrak" />
+        </EntityType>
+        <EntityType Name="KanunMaddeleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KanunMaddesi" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="KimlikBilgileri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TCKimlikNo" Type="Int64" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Soyadi" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="BabaAdi" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
+          <Property Name="Adresi" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Telefon" Type="Int64" />
+          <Property Name="AdSoyad" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Komutanliklar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Komutanlik" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="MuzekkereIcmalDefteri" Relationship="ETSModel.MID_KomutanlikID" FromRole="Komutanliklar" ToRole="MuzekkereIcmalDefteri" />
+          <NavigationProperty Name="OlaylarBilgisi" Relationship="ETSModel.OB_Komutanlik" FromRole="Komutanliklar" ToRole="OlaylarBilgisi" />
+        </EntityType>
+        <EntityType Name="MuzekkereCinsleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Muzekkere" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="MuzekkereIcmalDefteri" Relationship="ETSModel.MID_MuzekkereCinsi" FromRole="MuzekkereCinsleri" ToRole="MuzekkereIcmalDefteri" />
+        </EntityType>
+        <EntityType Name="MuzekkereIcmalDefteri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SiraNo" Type="Int64" Nullable="false" />
+          <Property Name="DosyaNo" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="AdiSoyadi" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="GeldigiTarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="GonderildigiTarih" Type="DateTime" Precision="3" />
+          <Property Name="Durum" Type="Int32" Nullable="false" />
+          <Property Name="Aciklama" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="MahalleId" Type="Int32" Nullable="false" />
+          <Property Name="MuzekkereCinsiId" Type="Int32" Nullable="false" />
+          <Property Name="KomutanlikId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Komutanliklar" Relationship="ETSModel.MID_KomutanlikID" FromRole="MuzekkereIcmalDefteri" ToRole="Komutanliklar" />
+          <NavigationProperty Name="MuzekkereCinsleri" Relationship="ETSModel.MID_MuzekkereCinsi" FromRole="MuzekkereIcmalDefteri" ToRole="MuzekkereCinsleri" />
+          <NavigationProperty Name="OlayYerleri" Relationship="ETSModel.MID_MahalleID" FromRole="MuzekkereIcmalDefteri" ToRole="OlayYerleri" />
+        </EntityType>
+        <EntityType Name="OlayDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Durum" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="GelenEvrak" Relationship="ETSModel.OlayDurumu_ID1" FromRole="OlayDurumu" ToRole="GelenEvrak" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.OlayDurumu_ID" FromRole="OlayDurumu" ToRole="GidenEvrak" />
+        </EntityType>
+        <EntityType Name="OlaylarBilgisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SiraNo" Type="Int64" Nullable="false" />
+          <Property Name="OlayBilNo" Type="Decimal" Nullable="false" Precision="9" Scale="0" />
+          <Property Name="OlayTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OlayYeriId" Type="Int32" Nullable="false" />
+          <Property Name="OlayId" Type="Int32" Nullable="false" />
+          <Property Name="KomutanlikId" Type="Int32" />
+          <Property Name="TansifId" Type="Int32" />
+          <NavigationProperty Name="Komutanliklar" Relationship="ETSModel.OB_Komutanlik" FromRole="OlaylarBilgisi" ToRole="Komutanliklar" />
+          <NavigationProperty Name="Suclar" Relationship="ETSModel.OB_Olay" FromRole="OlaylarBilgisi" ToRole="Suclar" />
+          <NavigationProperty Name="OlayYerleri" Relationship="ETSModel.OB_OlayYeri" FromRole="OlaylarBilgisi" ToRole="OlayYerleri" />
+          <NavigationProperty Name="Tasnifler" Relationship="ETSModel.OB_Tansif" FromRole="OlaylarBilgisi" ToRole="Tasnifler" />
+        </EntityType>
+        <EntityType Name="OlayYerleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OlayYeri" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari" Relationship="ETSModel.OlayYeriId" FromRole="OlayYerleri" ToRole="DaimiArastirmaTutanaklari" />
+          <NavigationProperty Name="GelenEvrak" Relationship="ETSModel.GelenEvrak_OlayYeri_ID" FromRole="OlayYerleri" ToRole="GelenEvrak" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.OlayYeri_ID" FromRole="OlayYerleri" ToRole="GidenEvrak" />
+          <NavigationProperty Name="MuzekkereIcmalDefteri" Relationship="ETSModel.MID_MahalleID" FromRole="OlayYerleri" ToRole="MuzekkereIcmalDefteri" />
+          <NavigationProperty Name="OlaylarBilgisi" Relationship="ETSModel.OB_OlayYeri" FromRole="OlayYerleri" ToRole="OlaylarBilgisi" />
+        </EntityType>
+        <EntityType Name="Periyotlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Periyot" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari" Relationship="ETSModel.PeriyotId" FromRole="Periyotlar" ToRole="DaimiArastirmaTutanaklari" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Soyadi" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Rutbesi" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Tim" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Durum" Type="Int32" Nullable="false" />
+          <Property Name="TamIsim" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="AdiSoyadi" Type="String" MaxLength="201" Unicode="true" FixedLength="false" />
+          <Property Name="Sicili" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Gorevi" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Baslik" Relationship="ETSModel.PersonelId" FromRole="Personel" ToRole="Baslik" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari" Relationship="ETSModel.Personel1Id" FromRole="Personel" ToRole="DaimiArastirmaTutanaklari" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari1" Relationship="ETSModel.Personel2Id" FromRole="Personel" ToRole="DaimiArastirmaTutanaklari" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari2" Relationship="ETSModel.Personel3Id" FromRole="Personel" ToRole="DaimiArastirmaTutanaklari" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari3" Relationship="ETSModel.Personel4Id" FromRole="Personel" ToRole="DaimiArastirmaTutanaklari" />
+          <NavigationProperty Name="GelenEvrak" Relationship="ETSModel.GelenE_Personel_ID" FromRole="Personel" ToRole="GelenEvrak" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.GidenEvrak_Personel_ID" FromRole="Personel" ToRole="GidenEvrak" />
+          <NavigationProperty Name="ZimmetDefteri" Relationship="ETSModel.TeslimAlan_ID" FromRole="Personel" ToRole="ZimmetDefteri" />
+        </EntityType>
+        <EntityType Name="Subeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sube" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ArsivGelenGiden" Relationship="ETSModel.AGG_SubeID" FromRole="Subeler" ToRole="ArsivGelenGiden" />
+        </EntityType>
+        <EntityType Name="Suclar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Suc" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="DaimiArastirmaTutanaklari" Relationship="ETSModel.SucId" FromRole="Suclar" ToRole="DaimiArastirmaTutanaklari" />
+          <NavigationProperty Name="OlaylarBilgisi" Relationship="ETSModel.OB_Olay" FromRole="Suclar" ToRole="OlaylarBilgisi" />
+        </EntityType>
+        <EntityType Name="Tasnifler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="AltBaslik" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Suc" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Grup" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="KanunMaddesi" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="OlaylarBilgisi" Relationship="ETSModel.OB_Tansif" FromRole="Tasnifler" ToRole="OlaylarBilgisi" />
+        </EntityType>
+        <EntityType Name="ZimmetDefteri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SiraNo" Type="Int64" Nullable="false" />
+          <Property Name="ZimmetTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TeslimAlanId" Type="Int32" Nullable="false" />
+          <Property Name="KategoriId" Type="Int32" Nullable="false" />
+          <Property Name="GelenEvrakId" Type="Int64" />
+          <Property Name="GidenEvrakId" Type="Int64" />
+          <NavigationProperty Name="EvrakKategori" Relationship="ETSModel.Kategori_ID" FromRole="ZimmetDefteri" ToRole="EvrakKategori" />
+          <NavigationProperty Name="GelenEvrak" Relationship="ETSModel.GelenEvrak_ID" FromRole="ZimmetDefteri" ToRole="GelenEvrak" />
+          <NavigationProperty Name="GelenEvrak1" Relationship="ETSModel.Zimmet_ID" FromRole="ZimmetDefteri" ToRole="GelenEvrak" />
+          <NavigationProperty Name="GidenEvrak" Relationship="ETSModel.GidenEvrak_ID" FromRole="ZimmetDefteri" ToRole="GidenEvrak" />
+          <NavigationProperty Name="GidenEvrak1" Relationship="ETSModel.Zimmet1_ID" FromRole="ZimmetDefteri" ToRole="GidenEvrak" />
+          <NavigationProperty Name="Personel" Relationship="ETSModel.TeslimAlan_ID" FromRole="ZimmetDefteri" ToRole="Personel" />
+        </EntityType>
+        <Association Name="AGG_CikaranMakamID">
+          <End Role="EvrakiCikaranMakam" Type="ETSModel.EvrakiCikaranMakam" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakiCikaranMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="CikaranMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AGG_GizlilikDerecesiID">
+          <End Role="GizlilikDerecesi" Type="ETSModel.GizlilikDerecesi" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GizlilikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="GizililikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AGG_IlgiliBirimID">
+          <End Role="Birimler" Type="ETSModel.Birimler" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Birimler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="IlgiliBirimId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AGG_SubeID">
+          <End Role="Subeler" Type="ETSModel.Subeler" Multiplicity="1" />
+          <End Role="ArsivGelenGiden" Type="ETSModel.ArsivGelenGiden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ArsivGelenGiden">
+              <PropertyRef Name="SubeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BaslikId">
+          <End Role="Baslik" Type="ETSModel.Baslik" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Baslik">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="BaslikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PersonelId">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="1" />
+          <End Role="Baslik" Type="ETSModel.Baslik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Baslik">
+              <PropertyRef Name="PersonelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayYeriId">
+          <End Role="OlayYerleri" Type="ETSModel.OlayYerleri" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PeriyotId">
+          <End Role="Periyotlar" Type="ETSModel.Periyotlar" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Periyotlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="PeriyotId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel1Id">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel1Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel2Id">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel2Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel3Id">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="0..1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel3Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Personel4Id">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="0..1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="Personel4Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SucId">
+          <End Role="Suclar" Type="ETSModel.Suclar" Multiplicity="1" />
+          <End Role="DaimiArastirmaTutanaklari" Type="ETSModel.DaimiArastirmaTutanaklari" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suclar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DaimiArastirmaTutanaklari">
+              <PropertyRef Name="SucId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EvrakiCikaranMakamG_ID">
+          <End Role="EvrakiCikaranMakam" Type="ETSModel.EvrakiCikaranMakam" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakiCikaranMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="EvrakiCikaranMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EvrakiCikaranMakamId">
+          <End Role="EvrakiCikaranMakam" Type="ETSModel.EvrakiCikaranMakam" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakiCikaranMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="EvrakiCikaranMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Kategori_ID">
+          <End Role="EvrakKategori" Type="ETSModel.EvrakKategori" Multiplicity="1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EvrakKategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="KategoriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GelenE_Personel_ID">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="PersonelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GelenEvrak_ID">
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="0..1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GelenEvrak">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="GelenEvrakId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GelenEvrak_OlayYeri_ID">
+          <End Role="OlayYerleri" Type="ETSModel.OlayYerleri" Multiplicity="0..1" />
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GizlilikDerecesiId">
+          <End Role="GizlilikDerecesi" Type="ETSModel.GizlilikDerecesi" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GizlilikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="GizlilikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GuvenlikNoOncelikDerecesiId">
+          <End Role="GuvenlikNoOncelikDerecesi" Type="ETSModel.GuvenlikNoOncelikDerecesi" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GuvenlikNoOncelikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="GuvenlikNoOncelikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayDurumu_ID1">
+          <End Role="OlayDurumu" Type="ETSModel.OlayDurumu" Multiplicity="1" />
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="OlayDurumuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Zimmet_ID">
+          <End Role="ZimmetDefteri" Type="ETSModel.ZimmetDefteri" Multiplicity="0..1" />
+          <End Role="GelenEvrak" Type="ETSModel.GelenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ZimmetDefteri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GelenEvrak">
+              <PropertyRef Name="ZimmetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GidenEvrak_ID">
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="0..1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GidenEvrak">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="GidenEvrakId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GidenEvrak_Personel_ID">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="0..1" />
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="PersonelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GizlilikDerecesi_ID">
+          <End Role="GizlilikDerecesi" Type="ETSModel.GizlilikDerecesi" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GizlilikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="GizlilikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GonderdigiMakam_ID">
+          <End Role="GonderdigiMakam" Type="ETSModel.GonderdigiMakam" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GonderdigiMakam">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="GonderdigiMakamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="GuvenlikNoOncelikDerecesi_ID">
+          <End Role="GuvenlikNoOncelikDerecesi" Type="ETSModel.GuvenlikNoOncelikDerecesi" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GuvenlikNoOncelikDerecesi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="GuvenlikNoOncelikDerecesiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayDurumu_ID">
+          <End Role="OlayDurumu" Type="ETSModel.OlayDurumu" Multiplicity="1" />
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="OlayDurumuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OlayYeri_ID">
+          <End Role="OlayYerleri" Type="ETSModel.OlayYerleri" Multiplicity="0..1" />
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Zimmet1_ID">
+          <End Role="ZimmetDefteri" Type="ETSModel.ZimmetDefteri" Multiplicity="0..1" />
+          <End Role="GidenEvrak" Type="ETSModel.GidenEvrak" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ZimmetDefteri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GidenEvrak">
+              <PropertyRef Name="ZimmetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MID_KomutanlikID">
+          <End Role="Komutanliklar" Type="ETSModel.Komutanliklar" Multiplicity="1" />
+          <End Role="MuzekkereIcmalDefteri" Type="ETSModel.MuzekkereIcmalDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Komutanliklar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MuzekkereIcmalDefteri">
+              <PropertyRef Name="KomutanlikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_Komutanlik">
+          <End Role="Komutanliklar" Type="ETSModel.Komutanliklar" Multiplicity="0..1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Komutanliklar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="KomutanlikId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MID_MuzekkereCinsi">
+          <End Role="MuzekkereCinsleri" Type="ETSModel.MuzekkereCinsleri" Multiplicity="1" />
+          <End Role="MuzekkereIcmalDefteri" Type="ETSModel.MuzekkereIcmalDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MuzekkereCinsleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MuzekkereIcmalDefteri">
+              <PropertyRef Name="MuzekkereCinsiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MID_MahalleID">
+          <End Role="OlayYerleri" Type="ETSModel.OlayYerleri" Multiplicity="1" />
+          <End Role="MuzekkereIcmalDefteri" Type="ETSModel.MuzekkereIcmalDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MuzekkereIcmalDefteri">
+              <PropertyRef Name="MahalleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_Olay">
+          <End Role="Suclar" Type="ETSModel.Suclar" Multiplicity="1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suclar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="OlayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_OlayYeri">
+          <End Role="OlayYerleri" Type="ETSModel.OlayYerleri" Multiplicity="1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OlayYerleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="OlayYeriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OB_Tansif">
+          <End Role="Tasnifler" Type="ETSModel.Tasnifler" Multiplicity="0..1" />
+          <End Role="OlaylarBilgisi" Type="ETSModel.OlaylarBilgisi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tasnifler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OlaylarBilgisi">
+              <PropertyRef Name="TansifId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TeslimAlan_ID">
+          <End Role="Personel" Type="ETSModel.Personel" Multiplicity="1" />
+          <End Role="ZimmetDefteri" Type="ETSModel.ZimmetDefteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ZimmetDefteri">
+              <PropertyRef Name="TeslimAlanId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ETSModelStoreContainer" CdmEntityContainer="ETSEntities">
+          <EntitySetMapping Name="ArsivGelenGiden">
+            <EntityTypeMapping TypeName="ETSModel.ArsivGelenGiden">
+              <MappingFragment StoreEntitySet="ArsivGelenGiden">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IlkEvrak" ColumnName="IlkEvrak" />
+                <ScalarProperty Name="IlgiliEvrak" ColumnName="IlgiliEvrak" />
+                <ScalarProperty Name="DosyaNo" ColumnName="DosyaNo" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="SubeId" ColumnName="SubeId" />
+                <ScalarProperty Name="EsasKonuNo" ColumnName="EsasKonuNo" />
+                <ScalarProperty Name="AraSayiNo" ColumnName="AraSayiNo" />
+                <ScalarProperty Name="Yil" ColumnName="Yil" />
+                <ScalarProperty Name="IlgiliBirimId" ColumnName="IlgiliBirimId" />
+                <ScalarProperty Name="CikaranMakamId" ColumnName="CikaranMakamId" />
+                <ScalarProperty Name="Konusu" ColumnName="Konusu" />
+                <ScalarProperty Name="GizililikDerecesiId" ColumnName="GizililikDerecesiId" />
+                <ScalarProperty Name="EkSayisi" ColumnName="EkSayisi" />
+                <ScalarProperty Name="ImhaYili" ColumnName="ImhaYili" />
+                <ScalarProperty Name="GelenEvrakId" ColumnName="GelenEvrakId" />
+                <ScalarProperty Name="GidenEvrakId" ColumnName="GidenEvrakId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ayarlar">
+            <EntityTypeMapping TypeName="ETSModel.Ayarlar">
+              <MappingFragment StoreEntitySet="Ayarlar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GelenEvrakEkGun" ColumnName="GelenEvrakEkGun" />
+                <ScalarProperty Name="GidenEvrakEkGun" ColumnName="GidenEvrakEkGun" />
+                <ScalarProperty Name="GelenEvrakKontrol" ColumnName="GelenEvrakKontrol" />
+                <ScalarProperty Name="GidenEvrakKontrol" ColumnName="GidenEvrakKontrol" />
+                <ScalarProperty Name="DaimiAramaTKontrol" ColumnName="DaimiAramaTKontrol" />
+                <ScalarProperty Name="DaimiAramaEkGun" ColumnName="DaimiAramaEkGun" />
+                <ScalarProperty Name="GelenEvrakKontrolSuresi" ColumnName="GelenEvrakKontrolSuresi" />
+                <ScalarProperty Name="GidenEvrakKontrolSuresi" ColumnName="GidenEvrakKontrolSuresi" />
+                <ScalarProperty Name="DaimiAramaKontrolSuresi" ColumnName="DaimiAramaKontrolSuresi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Baslik">
+            <EntityTypeMapping TypeName="ETSModel.Baslik">
+              <MappingFragment StoreEntitySet="Baslik">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AnaBaslik" ColumnName="AnaBaslik" />
+                <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
+                <ScalarProperty Name="UstYaziBaslik" ColumnName="UstYaziBaslik" />
+                <ScalarProperty Name="EkSayisi" ColumnName="EkSayisi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Birimler">
+            <EntityTypeMapping TypeName="ETSModel.Birimler">
+              <MappingFragment StoreEntitySet="Birimler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Birim" ColumnName="Birim" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DaimiArastirmaTutanaklari">
+            <EntityTypeMapping TypeName="ETSModel.DaimiArastirmaTutanaklari">
+              <MappingFragment StoreEntitySet="DaimiArastirmaTutanaklari">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Kimlikler" ColumnName="Kimlikler" />
+                <ScalarProperty Name="SucId" ColumnName="SucId" />
+                <ScalarProperty Name="OlayTarihi" ColumnName="OlayTarihi" />
+                <ScalarProperty Name="OlayYeriId" ColumnName="OlayYeriId" />
+                <ScalarProperty Name="OlaySorusturmaNo" ColumnName="OlaySorusturmaNo" />
+                <ScalarProperty Name="DaimiAramaNo" ColumnName="DaimiAramaNo" />
+                <ScalarProperty Name="DaimiAramaKarariTarihi" ColumnName="DaimiAramaKarariTarihi" />
+                <ScalarProperty Name="ZamanAsimi" ColumnName="ZamanAsimi" />
+                <ScalarProperty Name="Ozet" ColumnName="Ozet" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Personel1Id" ColumnName="Personel1Id" />
+                <ScalarProperty Name="Personel2Id" ColumnName="Personel2Id" />
+                <ScalarProperty Name="Personel3Id" ColumnName="Personel3Id" />
+                <ScalarProperty Name="Personel4Id" ColumnName="Personel4Id" />
+                <ScalarProperty Name="PeriyotYili" ColumnName="PeriyotYili" />
+                <ScalarProperty Name="BaslikId" ColumnName="BaslikId" />
+                <ScalarProperty Name="PeriyotId" ColumnName="PeriyotId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EvrakiCikaranMakam">
+            <EntityTypeMapping TypeName="ETSModel.EvrakiCikaranMakam">
+              <MappingFragment StoreEntitySet="EvrakiCikaranMakam">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Makam" ColumnName="Makam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EvrakKategori">
+            <EntityTypeMapping TypeName="ETSModel.EvrakKategori">
+              <MappingFragment StoreEntitySet="EvrakKategori">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Kategori" ColumnName="Kategori" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GelenEvrak">
+            <EntityTypeMapping TypeName="ETSModel.GelenEvrak">
+              <MappingFragment StoreEntitySet="GelenEvrak">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EvrakKayitNo" ColumnName="EvrakKayitNo" />
+                <ScalarProperty Name="EvrakKayitTarihi" ColumnName="EvrakKayitTarihi" />
+                <ScalarProperty Name="EvrakiCikaranMakamId" ColumnName="EvrakiCikaranMakamId" />
+                <ScalarProperty Name="TarihTSG" ColumnName="TarihTSG" />
+                <ScalarProperty Name="DosyaNoKonusu" ColumnName="DosyaNoKonusu" />
+                <ScalarProperty Name="GizlilikDerecesiId" ColumnName="GizlilikDerecesiId" />
+                <ScalarProperty Name="GuvenlikNoOncelikDerecesiId" ColumnName="GuvenlikNoOncelikDerecesiId" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="EvrakSonTarihi" ColumnName="EvrakSonTarihi" />
+                <ScalarProperty Name="ZimmetId" ColumnName="ZimmetId" />
+                <ScalarProperty Name="OlayDurumuId" ColumnName="OlayDurumuId" />
+                <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
+                <ScalarProperty Name="OlayYeriId" ColumnName="OlayYeriId" />
+                <ScalarProperty Name="Arsivlendi" ColumnName="Arsivlendi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GidenEvrak">
+            <EntityTypeMapping TypeName="ETSModel.GidenEvrak">
+              <MappingFragment StoreEntitySet="GidenEvrak">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EvrakKayitNo" ColumnName="EvrakKayitNo" />
+                <ScalarProperty Name="EvrakKayitTarihi" ColumnName="EvrakKayitTarihi" />
+                <ScalarProperty Name="EvrakiCikaranMakamId" ColumnName="EvrakiCikaranMakamId" />
+                <ScalarProperty Name="TarihTSG" ColumnName="TarihTSG" />
+                <ScalarProperty Name="DosyaNoKonusu" ColumnName="DosyaNoKonusu" />
+                <ScalarProperty Name="GizlilikDerecesiId" ColumnName="GizlilikDerecesiId" />
+                <ScalarProperty Name="GuvenlikNoOncelikDerecesiId" ColumnName="GuvenlikNoOncelikDerecesiId" />
+                <ScalarProperty Name="GonderdigiMakamId" ColumnName="GonderdigiMakamId" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="EvrakSonTarihi" ColumnName="EvrakSonTarihi" />
+                <ScalarProperty Name="OlayDurumuId" ColumnName="OlayDurumuId" />
+                <ScalarProperty Name="ZimmetId" ColumnName="ZimmetId" />
+                <ScalarProperty Name="OlayYeriId" ColumnName="OlayYeriId" />
+                <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
+                <ScalarProperty Name="Arsivlendi" ColumnName="Arsivlendi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GizlilikDerecesi">
+            <EntityTypeMapping TypeName="ETSModel.GizlilikDerecesi">
+              <MappingFragment StoreEntitySet="GizlilikDerecesi">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Derece" ColumnName="Derece" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GonderdigiMakam">
+            <EntityTypeMapping TypeName="ETSModel.GonderdigiMakam">
+              <MappingFragment StoreEntitySet="GonderdigiMakam">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Makam" ColumnName="Makam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GuvenlikNoOncelikDerecesi">
+            <EntityTypeMapping TypeName="ETSModel.GuvenlikNoOncelikDerecesi">
+              <MappingFragment StoreEntitySet="GuvenlikNoOncelikDerecesi">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Derece" ColumnName="Derece" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KanunMaddeleri">
+            <EntityTypeMapping TypeName="ETSModel.KanunMaddeleri">
+              <MappingFragment StoreEntitySet="KanunMaddeleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="KanunMaddesi" ColumnName="KanunMaddesi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KimlikBilgileri">
+            <EntityTypeMapping TypeName="ETSModel.KimlikBilgileri">
+              <MappingFragment StoreEntitySet="KimlikBilgileri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TCKimlikNo" ColumnName="TCKimlikNo" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+                <ScalarProperty Name="BabaAdi" ColumnName="BabaAdi" />
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+                <ScalarProperty Name="Adresi" ColumnName="Adresi" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Komutanliklar">
+            <EntityTypeMapping TypeName="ETSModel.Komutanliklar">
+              <MappingFragment StoreEntitySet="Komutanliklar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Komutanlik" ColumnName="Komutanlik" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MuzekkereCinsleri">
+            <EntityTypeMapping TypeName="ETSModel.MuzekkereCinsleri">
+              <MappingFragment StoreEntitySet="MuzekkereCinsleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Muzekkere" ColumnName="Muzekkere" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MuzekkereIcmalDefteri">
+            <EntityTypeMapping TypeName="ETSModel.MuzekkereIcmalDefteri">
+              <MappingFragment StoreEntitySet="MuzekkereIcmalDefteri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+                <ScalarProperty Name="DosyaNo" ColumnName="DosyaNo" />
+                <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+                <ScalarProperty Name="GeldigiTarih" ColumnName="GeldigiTarih" />
+                <ScalarProperty Name="GonderildigiTarih" ColumnName="GonderildigiTarih" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="MahalleId" ColumnName="MahalleId" />
+                <ScalarProperty Name="MuzekkereCinsiId" ColumnName="MuzekkereCinsiId" />
+                <ScalarProperty Name="KomutanlikId" ColumnName="KomutanlikId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OlayDurumu">
+            <EntityTypeMapping TypeName="ETSModel.OlayDurumu">
+              <MappingFragment StoreEntitySet="OlayDurumu">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OlaylarBilgisi">
+            <EntityTypeMapping TypeName="ETSModel.OlaylarBilgisi">
+              <MappingFragment StoreEntitySet="OlaylarBilgisi">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+                <ScalarProperty Name="OlayBilNo" ColumnName="OlayBilNo" />
+                <ScalarProperty Name="OlayTarihi" ColumnName="OlayTarihi" />
+                <ScalarProperty Name="OlayYeriId" ColumnName="OlayYeriId" />
+                <ScalarProperty Name="OlayId" ColumnName="OlayId" />
+                <ScalarProperty Name="KomutanlikId" ColumnName="KomutanlikId" />
+                <ScalarProperty Name="TansifId" ColumnName="TansifId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OlayYerleri">
+            <EntityTypeMapping TypeName="ETSModel.OlayYerleri">
+              <MappingFragment StoreEntitySet="OlayYerleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="OlayYeri" ColumnName="OlayYeri" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Periyotlar">
+            <EntityTypeMapping TypeName="ETSModel.Periyotlar">
+              <MappingFragment StoreEntitySet="Periyotlar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Periyot" ColumnName="Periyot" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personel">
+            <EntityTypeMapping TypeName="ETSModel.Personel">
+              <MappingFragment StoreEntitySet="Personel">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+                <ScalarProperty Name="Rutbesi" ColumnName="Rutbesi" />
+                <ScalarProperty Name="Tim" ColumnName="Tim" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="TamIsim" ColumnName="TamIsim" />
+                <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+                <ScalarProperty Name="Sicili" ColumnName="Sicili" />
+                <ScalarProperty Name="Gorevi" ColumnName="Gorevi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subeler">
+            <EntityTypeMapping TypeName="ETSModel.Subeler">
+              <MappingFragment StoreEntitySet="Subeler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Sube" ColumnName="Sube" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Suclar">
+            <EntityTypeMapping TypeName="ETSModel.Suclar">
+              <MappingFragment StoreEntitySet="Suclar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Suc" ColumnName="Suc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tasnifler">
+            <EntityTypeMapping TypeName="ETSModel.Tasnifler">
+              <MappingFragment StoreEntitySet="Tasnifler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="AltBaslik" ColumnName="AltBaslik" />
+                <ScalarProperty Name="Suc" ColumnName="Suc" />
+                <ScalarProperty Name="Grup" ColumnName="Grup" />
+                <ScalarProperty Name="KanunMaddesi" ColumnName="KanunMaddesi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZimmetDefteri">
+            <EntityTypeMapping TypeName="ETSModel.ZimmetDefteri">
+              <MappingFragment StoreEntitySet="ZimmetDefteri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+                <ScalarProperty Name="ZimmetTarihi" ColumnName="ZimmetTarihi" />
+                <ScalarProperty Name="TeslimAlanId" ColumnName="TeslimAlanId" />
+                <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+                <ScalarProperty Name="GelenEvrakId" ColumnName="GelenEvrakId" />
+                <ScalarProperty Name="GidenEvrakId" ColumnName="GidenEvrakId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
